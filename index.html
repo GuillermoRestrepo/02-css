@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducción A CSS</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#que-es-css">¿Qué es CSS?</a></li>
+                <li>
+                    <a href="#como-se-usa-css">¿Cómo se usa CSS?</a>
+                    <ol>
+                        <li><a href="#forma-1">En línea</a></li>
+                        <li><a href="#forma-2">Interno</a></li>
+                        <li><a href="#forma-3">Externo</a></li>
+                    </ol>
+                </li>
+                <li><a href="#sintaxis-css">Sintaxis</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>INTRODUCCIÓN A CSS</h1>
+        <h2 id="que-es-css">¿Qué Es CSS?</h1>
+        <p>CSS (Cascading Style Sheets) es un lenguaje que se usa para dar estilo y diseño a las páginas web. Mientras que HTML define la estructura del contenido (por ejemplo, encabezados, párrafos, imágenes), CSS se encarga de cómo se ven esos elementos: colores, tamaños, posiciones, márgenes, fuentes, etc.</p>
+        
+        <h2 id="como-se-usa-css">¿Cómo Se Usa CSS?</h2>
+        <p>Hay tres formas principales de usar CSS en un documento HTML:</p>
+        <ol>
+            <li>
+                <h3 id="forma-1">CSS En Línea <em>(inline)</em></h3>
+                <p>Se aplica directamente al elemento HTML.</p>
+                <pre><code>
+                    &lt;p style="color: red;"&gt;Este texto es rojo&lt;/p&gt;
+                </code></pre>
+            </li>
+            <li>
+                <h3 id="forma-2">CSS Interno <em>(internal)</em></h3>
+                <p>Se coloca dentro de una etiqueta <code>&lt;style&gt;</code> en el <code>&lt;head&gt;</code> del HTML.</p>
+                <pre><code>
+                    &lt;head&gt;
+                        &lt;style&gt;
+                            p {
+                                color: blue;
+                            }
+                        &lt;/style&gt;
+                    &lt;/head&gt;
+                </code></pre>
+            </li>
+            <li>
+                <h3 id="forma-3">CSS Externo <em>(external)</em></h3>
+                <p>Se escribe en un archivo aparte (por ejemplo, estilos.css) y se enlaza al HTML con <link>.</p>
+                <p><strogn>Archivo HTML:</strogn></p>
+                <pre><code>
+                    &lt;head&gt;
+                        &lt;link rel="stylesheet" href="estilos.css"&gt;
+                    &lt;/head&gt;
+                </code></pre>
+                <p><strogn>Archivo CSS:</strogn></p>
+                <pre><code>
+                    p {
+                        color: green;
+                      }
+                </code></pre>
+            </li>
+        </ol>
+
+        <h2 id="sintaxis-css">Sintaxis Básica De CSS</h2>   
+        <ul>
+            <li><strong>Selector:</strong> Indica a qué elemento HTML se aplican los estilos.</li>
+            <li><strong>Propiedad:</strong> Lo que se desea modificar.</li>
+            <li><strong>Valor:</strong> El valor que se le asigna a una propiedad.</li>
+            <li><strong>Declaración: Es el conjunto de una propiedad y su valor.</strong></li>
+            <li><strong>Regla: Es el conjunto de selector(es) y declaracion(es), es decir, puede haber más de un selector y mas de una declaracion en una misma regla.</strong></li>
+        </ul>
+        <p>Ejemplo:</p>
+        <pre><code>
+            selector1, Selector2, ..., SelectorN {
+                propiedad1: valor;
+                propiedad2: valor;
+                ...
+                propiedadN: valor;
+              }
+        </code></pre>
+    </main>
+    <footer>
+        <p>Creado por: Guillermo Restrepo</p>
+        <p>Fecha de creación: <time datetime="2025-04-22">22 de abril de 2025.</time></p>
+    </footer>
+</body>
+</html>
