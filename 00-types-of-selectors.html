@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos De Selectores</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header></header>
+    <main>
+        <h1>SELECTORES</h1>
+        <p>Como ya lo sabemos, los selectores son la forma en la que CSS identifica los elementos de un documento HTML, para que estos puedan ser modificados, no obstante, existen diferentes tipos de selectores, los cuales veremos a continuación:</p>
+
+        <dl>
+            <dt><h2>Selector Universal</h2></dt>
+            <dd>
+                <p>Se representa con un asterisco (*), y afecta a todos los elementos del documento. Ejemplo:</p>
+                <pre><code>
+                    * {
+                        background-color: yellow;
+                    }
+                </code></pre>
+                <p>Esta regla hará que el fonde sea de color amarillo.</p>
+            </dd>
+
+            <dt><h2>Selector De Etiqueta</h2></dt>
+            <dd>
+                <p>Se representa con el nombre de la etiqueta, y afecta unicamenta a las etiquetas que lleven el mismo nombre. Ejemplo:</p>
+                <pre><code>
+                    &lt;p&gt; {
+                        background-color: blue;
+                    }
+                </code></pre>
+                <p>Esta regla hará que todo el contenido de las etiquetas &lt;p&gt; tenga un fondo de color azul.</p>
+            </dd>
+
+            <dt><h2>Selector De ID</h2></dt>
+            <dd>
+                <p>Se representa con un numeral/almoadilla (#), seguido del valor del atributo (<code>id="valor"</code>), recordemos que el valor de este atributo debe de ser unico para cada elemento. Ejemplo:</p>
+                <p><em>En HTML:</em></p>
+                <pre><code>
+                    &lt;body&gt;
+                        &lt;h2 id="encabezado-1"&gt;Encabezado 1&lt;/h2&gt;
+                        &lt;h2 id="encabezado-2"&gt;Encabezado 2&lt;/h2&gt;
+                    &lt;/body&gt;
+                </code></pre>
+                <p><em>En CSS:</em></p>
+                <pre><code>
+                    #encabezado-1 {
+                        color: green;
+                    }
+                    #encabezado-2 {
+                        color: orange;
+                    }
+                </code></pre>
+                <p>Estas reglas harán, que las letras del encabezado 1 sean de color verde y las letras del encabezado 2 sean de color anaranjado.</p>
+            </dd>
+
+            <dt><h2>Selector De Clase</h2></dt>
+            <dd>
+                <p>Se representa con un punto (.), seguido del valor del atributo (<code>class="valor"</code>), este si puede ser utilizado en más de un elementos. Ejemplo:
+                <p><em>En HTML:</em></p>
+                <pre><code>
+                    &lt;body&gt;
+                        &lt;h2 class="encabezado"&gt;ENCABEZADO 1&lt;/h2&gt;
+                        &lt;h2 class="encabezado"&gt;Encabezado 2&lt;/h2&gt;
+                    &lt;/body&gt;
+                </code></pre>
+                <p><em>En CSS:</em></p>
+                <pre><code>
+                    .encabezado {
+                        color: purple;
+                    }
+                </code></pre>
+                <p>Esta regla hará que ambos encabezados sean de color morado.</p>
+            </dd>
+
+            <dt><h2>Selector Por Medio De Cualquier Atributo</h2></dt>
+            <dd>
+                <p>Se caracteriza por estar encerrado entre corchetes, y existen 6 formas de utilizar este, iremos una por una:</p>
+                <table>
+                    <thead>
+                        <th>Forma</th>
+                        <th>Sintaxis</th>
+                        <th>Como funciona</th>
+                    </thead>
+                    <tr>
+                        <td>1</td>
+                        <td><code>[href]</code></td>
+                        <td>Afecta a todos los elementos que cuenten con el atributo (<code>href</code>)</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td><code>[href="encabezado"]</code></td>
+                        <td>Afecta a todos los elementos que cuenten con el atributo (<code>href</code>) y a su vez, que el valor de este sea el que se especifica en el selector. En este caso el valor especificado es: (<code>encabezado</code>).</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td><code>[href^="enca"]</code></td>
+                        <td>Afecta a todos los elementos que cuenten con el atributo (<code>href</code>) y a su vez, que el valor de este <strong>comience</strong> con el que se especifica en el selector. En este caso el valor especificado es: (<code>enca</code>).</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td><code>[href$="zado"]</code></td>
+                        <td>Afecta a todos los elementos que cuenten con el atributo (<code>href</code>) y a su vez, que el valor de este <strong>termine</strong> con el que se especifica en el selector. En este caso el valor especificado es: (<code>zado</code>).</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td><code>[href*="be"]</code></td>
+                        <td>Afecta a todos los elementos que cuenten con el atributo (<code>href</code>) y a su vez, que el valor de este <strong>contenga</strong> en alguna parte el valor que se especifica en el selector. En este caso el valor especificado es: (<code>be</code>).</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td><code>[href|="encabezado"]</code></td>
+                        <td>Afecta a todos los elementos que cuenten con el atributo (<code>href</code>) y a su vez, que el valor de este <strong>comience</strong> con el que se especifica en el selector, <strong>seguido</strong> de un guión (-) y texto adicional. En este caso el valor especificado es: (<code>encabezado</code>), pero podría afectar a (<code>encabezado-cualquier cosa</code>).</td>
+                    </tr>
+                </table>
+            </dd>
+
+            <dt><h2>Selectores Agrupados</h2></dt>
+            <dd>
+                <p>Se trata de dos o más selectores seprados por una coma (,), se utiliza cuando varios elementos tienen estilos diferentes pero comparten un estilo entre si. Ejemplo:</p>
+                <p><em>En HTML:</em></p>
+                <pre><code>
+                    &lt;body&gt;
+                        &lt;h2 class="encabezado-1"&gt;ENCABEZADO 1&lt;/h2&gt;
+                        &lt;h2 class="encabezado-2"&gt;Encabezado 2&lt;/h2&gt;
+                    &lt;/body&gt;
+                </code></pre>
+                <p><em>En CSS:</em></p>
+                <pre><code>
+                    .encabezado-1, .encabezado-2 {
+                        background-color: black;
+                    }
+
+                    .encabezado-1 {
+                        color: green;
+                    }
+                    
+                    .encabezado-2 {
+                        color: yellow;
+                    }
+                </code></pre>
+                <p>Estas reglas harán que ambos encabezados tengan un fondo de color negro, pero el color de la letra del 1er encabezado será verde y del sgundo será amarilla.</p>
+                <p><strong>Nota:</strong> Pueden combinarce diferentes tipos de selectores. Ejemplo: (<code>h1, .clase, #identificador, [src]</code>) </p>
+            </dd>
+
+            <dt><h2>Selector Descendente</h2></dt>
+            <dd>
+                <p>Sirve para especificar elementos que se encuentren dentro de otros elementos, esto se hace separando los selectores unicamente por un espacio. Ejemplo:</p>
+                <p><em>En HTML:</em></p>
+                <pre><code>
+                    &lt;body&gt;
+                        &lt;h2&gt;Encabezado 1&lt;/h2&gt;
+                        &lt;div class="container"&gt;
+                            &lt;h2&gt;Encabezado 2&lt;/h2&gt;
+                        &lt;/div&gt;
+                    &lt;/body&gt;
+                </code></pre>
+                <p><em>En CSS:</em></p>
+                <pre><code>
+                    .container h2 {
+                        background-color: red;
+                    }
+                </code></pre>
+                <p>Esta regla hará que el fondo de la etiqueta <code>&lt;h2&gt;</code> sea de color rojo, pero solo la etiqueta <code>&lt;h2&gt;</code> que se encuentre dentro de un <code>&lt;div&gt;</code> y como se puede ver, tambien se pueden combinar los selectores.</p>
+                <p><strong>Nota:</strong> las buenas practicas indican q como maximo se debe de bajar un unico nivel, descender mas niveles puede generar problemas.</p>
+            </dd>
+            
+            <dt><h2>Selector Hijos Directos</h2></dt>
+            <dd>
+                <p>Afecta a los hijos directos, esto se hace poniendo el selector del elemento padre, seguido de un mayor que (>), seguido del selector del elemento hijo. Ejemplo:</p>
+                <p><em>En HTML:</em></p>
+                <pre><code>
+                    &lt;body&gt;
+                        &lt;div class="container"&gt;
+                            &lt;h1&gt;Encabezado 1&lt;/h1&gt;
+                            &lt;p&gt;Parrafo #1&lt;/p&gt;
+
+                            &lt;div&gt;
+                                &lt;h2&gt;Encabezado 2&lt;/h2&gt;
+                                &lt;p&gt;Parrafo #2&lt;/p&gt;
+
+                            &lt;/div&gt;
+                            &lt;p&gt;Parrafo #3&lt;/p&gt;
+                        &lt;/div&gt;
+                    &lt;/body&gt;
+                </code></pre>
+                <p><em>En CSS:</em></p>
+                <pre><code>
+                    .container > p {
+                        color: black;
+                    }
+                </code></pre>
+                <p>A pesar de q los 3 parrafos están contenidos por una etiqueta (<code>&lt;p&gt;</code>), unicamente los estilos se aplicarán al primer y al tercer parrafo, ya que, estos <strong>sí</strong> son hijos directos del elemento <code>&lt;div&gt;</code> que tiene la clase (<code>.container</code>), mientras que el parrafo 2, vendria a ser un nieto.</p>
+                <p><strong>Nota:</strong> tambien se pueden combinar selectores y tambien se puede descender mas niveles (nietos, bisnietos y demas), pero igual es aconsejable solo descender un nivel.</p>
+            </dd>
+
+            <dt><h2>Selector De Hermanos</h2></dt>
+            <dd>
+                <p>Afecta unicamente a los elementos hermanos, es decir, los elementos q compartan el mismo elemento contenedor. hay dos formas. </p>
+                <ol>
+                    <li>
+                        <h3>Hermano Siguiente</h3>
+                        <p>Selecciona el elemento hermano siguiente mas próximo, que se haya indicado.</p>
+                        <pre><code>
+                            p + h2 {
+                                color: blue;
+                            }
+                        </code></pre>
+                        <p>Le dará estilos al próximo elemento hermano que sea un <code>&lt;h2&gt;</code></p>
+                    </li>
+                    <li>
+                        <h3>Hermanos Siguientes</h3>
+                        <p>Selecciona los elementos hermanos siguientes, que se haya indicado.</p>
+                        <pre><code>
+                            .encabezado-2 ~ p {
+                                color: red;
+                            }
+                        </code></pre>
+
+                        <p>Le dará estilos a los siguientes elementos <code>&lt;p&gt;</code> q sean hermanos del encabezado <code>&lt;h2&gt;</code> que tenga la clase <code>encabezado-2</code></p>
+                    </li>
+                </ol>
+            </dd>
+        </dl>
+    </main>
+    <footer>
+        <p>Creado por: Guillermo Restrepo</p>
+        <p>Fecha de creación: <time datetime="2025-04-23">22 de abril de 2025.</time></p>
+    </footer>
+</body>
+</html>
