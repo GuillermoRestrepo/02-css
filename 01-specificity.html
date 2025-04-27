@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Especificidad</title>
+    <style>
+        th, tr, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>ESPECIFICIDAD</h1>
+    <p>La especificidad en CSS es el nivel de importancia que tiene un selector para aplicar un estilo cuando hay conflictos entre varios estilos.</p>
+    
+    <h2>¿Cómo calcular la especificidad en CSS?</h2>
+    <p>La especificidad se calcula como cuatro números separados por comas: (A, B, C, D)</p>
+        
+    <p>Cada letra representa:</p>
+    <table>
+        <thead>
+            <th>Letra</th>
+            <th>Selector</th>
+        </thead>
+        <tr>
+            <td>A</td>
+            <td>Estilos en línea (<code>style= "..."</code>)</td>
+        </tr>
+        <tr>
+            <td>B</td>
+            <td>Identificadores (<code>#id</code>)</td>
+        </tr>
+        <tr>
+            <td>C</td>
+            <td>Clases (<code>.class</code>), Atributos (<code>[src= "..."]</code>) y pseudoclases (<code>:hover</code>)</td>
+        </tr>
+        <tr>
+            <td>D</td>
+            <td>Etiquetas (<code>&lt;h1&gt;</code>) y pseudo-elementos (<code>::before</code>)</td>
+        </tr>
+    </table>
+
+    <h2>Ejemplo:</h2>
+    <table>
+        <thead>
+            <th>Selector</th>
+            <th>Especificidad</th>
+        </thead>
+        <tr>
+            <td>h1</td>
+            <td>(0, 0, 0, 1)</td>
+        </tr>
+        <tr>
+            <td>.boton</td>
+            <td>(0, 0, 1, 0)</td>
+        </tr>
+        <tr>
+            <td>#menu</td>
+            <td>(0, 1, 0, 0)</td>
+        </tr>
+        <tr>
+            <td>p.intro</td>
+            <td>(0, 0, 1, 1)</td>
+        </tr>
+        <tr>
+            <td>#header .nav li</td>
+            <td>(0, 1, 1, 1)</td>
+        </tr>
+        <tr>
+            <td>style="color: red"</td>
+            <td>(1, 0, 0, 0)</td>
+    </table>
+
+    <p>En resumen, la regla que tenga el selector con mayor numero de especificidad, será la regla que defina el estilo.</p>
+    <p>Por otro lado, si dos reglas tienen el mismo nivel de especificidad, se aplicarán los estilos de la última regla definida.</p>
+
+    <h2>Ejemplo En Código:</h2>
+    <p><em>En HTML:</em></p>
+    <pre><code>
+        &lt;body&gt;
+            &lt;p id="p1" class="parrafo"&gt;Este es un párrafo.&lt;/p&gt;
+        &lt;body&gt;
+    </code></pre>
+
+    <p><em>En CSS:</em></p>
+    <pre><code>
+        #p1 {
+            backgroud-color: yellow;
+        }
+
+        .parrafo {
+            backgroud-color: blue;
+        }
+
+        p {
+            backgroud-color: red;
+        }
+    </code></pre>
+
+    <p>A pesar de que la regla con el selectopr (<code>p</code>) fue la última en ser definida, la regla q validará el navegador será la que tiene el selector (<code>#p1</code>) y en caso de q se borre dicha regla, la segunda con mayor especificidad seria la regla que tiene el selector (<code>.parrafo</code>).</p>
+
+    <p><strong>Nota:</strong> utilizar <code>!important</code> para definir una propiedad de una regla como la maás importante, es una muy mala práctica, es recomendable no acudir a su uso.</p>
+
+    <p><strong>Nota #2:</strong> lo mas recomendable es utilizar un unico tipo de selectoy y así evitarse problemas.</p>
+</tr>
+</body>
+</html>
