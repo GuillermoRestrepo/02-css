@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="02-inheritance.css">
+    <title>Herencia</title>
+</head>
+<body>
+    <h1>HERENCIA</h1>
+    <p>La herencia es cuando un elemento hijo toma automáticamente ciertos estilos de su elemento padre. Ejemplo:</p>
+    <table>
+        <tr>
+            <td>
+                <p><em>Código HTML</em></p>
+                <pre><code>
+&lt;body&gt;
+    &lt;h3 class="encabezado"&gt;COMO FUNCIONA LA &lt;span&gt;HERENCIA&lt;/span&gt; EN CSS&lt;/h1&gt;
+&lt;/body&gt;
+                </code></pre>
+                        
+                <p><em>Código CSS</em></p>
+                <pre><code>
+.encabezado {
+    color: cyan;
+}
+                </code></pre>
+            </td>
+
+            <td>
+                <h3 class="encabezado">COMO FUNCIONA LA <span>HERENCIA</span> EN CSS</h3>
+            </td>
+        </tr>
+    </table>
+    <p>En este ejemplo se puede ver como la etiqueta (<code>&lt;span&gt;</code>) hereda la propiedad (<code>color</code>) de la etiqueta que lo contiene (etiqueta padre), que viene siendo (<code>&lt;h3&gt;</code>).</p>
+
+
+    <p>Existen propiedades que se heredan como (<code>color</code>), y propiedades que no lo hacen, como (<code>margin</code>). Ejemplo:</p>
+    <table>
+        <tr>
+            <td>
+                <p><em>Código HTML</em></p>
+                <pre><code>
+&lt;body&gt;
+    &lt;h3 class="encabezado-2"&gt;COMO FUNCIONA LA &lt;span class="editar"&gt;HERENCIA&lt;/span&gt; EN CSS&lt;/h1&gt;
+&lt;/body&gt;
+                </code></pre>
+                        
+                <p><em>Código CSS</em></p>
+                <pre><code>
+.encabezado-2 {
+    margin: 20px;
+}
+                </code></pre>
+            </td>
+            <td>
+                <p><em>Por defecto no hereda la propiedad (<code>margin</code>)</em>:</p>
+                <h3 class="encabezado-2">COMO FUNCIONA LA <span>HERENCIA</span> EN CSS</h3>
+            
+                <p><em>Este es un ejemplo de como se vería si <code>&lt;span&gt;</code> heredase la propiedad <code>margin</code>:</em></p>
+                <h3 class="encabezado-2">COMO FUNCIONA LA <span class="editar">HERENCIA</span> EN CSS</h3>
+            </td>
+        </tr>
+    </table>
+
+
+    <p>Existen elementos que son capaces de heredar estilos, como (<code>&lt;span&gt;</code>) y otros que no lo son como (<code>&lt;a&gt;</code>).</p>
+    <table>
+        <tr>
+            <td>
+                <p><em>Código HTML</em></p>
+                <pre><code>
+&lt;body&gt;
+    &lt;h3 class="encabezado"&gt;Esto es un &lt;span&gt;span&lt;/span&gt;.&lt;/h3&gt;
+    &lt;h3 class="encabezado"&gt;Esto es un &lt;a href="#"&gt;enlace&lt;/a&gt;.&lt;/h3&gt;
+&lt;/body&gt;
+                </code></pre>
+                        
+                <p><em>Código CSS</em></p>
+                <pre><code>
+.encabezado {
+    color: cyan;
+}
+                </code></pre>
+            </td>
+            <td>
+                <h3 class="encabezado">Esto es un <span>span</span>.</h3>
+                <h3 class="encabezado">Esto es un <a href="#">enlace</a>.</h3>
+            </td>
+        </tr>
+    </table>
+    <p>Se puede ver como la etiqueta (<code>&lt;span&gt;</code>) hereda los estilos, mientras que la etiqueta (<code>&lt;a&gt;</code>).</p>
+
+
+    <p>Existe la posibilidad de hacer que un elemento que no hereda estilo lo haga, esto se hac</p>
+    <table>
+        <tr>
+            <td>
+                <p><em>Código HTML</em></p>
+                <pre><code>
+&lt;body&gt;
+    &lt;h3 class="encabezado"&gt;Esto es un &lt;span class="span"&gt;span&lt;/span&gt;.&lt;/h3&gt;
+    &lt;h3 class="encabezado"&gt;Esto es un &lt;a class="enlace" href="#"&gt;enlace&lt;/a&gt;.&lt;/h3&gt;
+&lt;/body&gt;
+                </code></pre>
+                        
+                <p><em>Código CSS</em></p>
+                <pre><code>
+.encabezado {
+    color: cyan;
+}
+
+.span {
+    color: initial;
+}
+
+.enlace {
+    color: inherit;
+}
+                </code></pre>
+            </td>
+            <td>
+                <h3 class="encabezado">Esto es un <span class="span">span</span>.</h3>
+                <h3 class="encabezado">Esto es un <a class="enlace" href="#">enlace</a>.</h3>
+            </td>
+        </tr>
+    </table>
+    <p><strong>initial:</strong> sirve para que un elemento se fuerce a <em>NO</em> heredar estilos.</p>
+    <p><strong>inherit:</strong> sirve para que un elemento se fuerce a <em>SI</em> heredar estilos.</p>
+</body>
+</html>

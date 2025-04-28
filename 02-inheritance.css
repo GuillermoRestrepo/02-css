@@ -1,0 +1,25 @@
+thead, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;    
+}
+
+.encabezado {
+    color: cyan;
+}
+
+.encabezado-2 {
+    margin: 20px;
+}
+
+.editar {
+    margin: 20px
+}
+
+.span{
+    color: initial;
+}
+
+.enlace{
+    color: inherit;
+}
