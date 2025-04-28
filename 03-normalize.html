@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="03-normalize.css">
+    <title>Normalizar Estilos</title>
+</head>
+<body>
+    <h1>Normalizar Estilos</h1>
+    <ul>
+        <li>Por defecto cada navegador tiene ciertos estilos aplicados.</li>
+
+        <li>Es posible que no todos los navegadores tengan los mismos estilos aplicados por defecto.</li>
+
+        <li>También es posible que esto cause problemas al visualizar un sitio web desde diferentes navegadores.</li>
+
+        <li>Para que una página web q "no tenga" estilos propios, se vea de la misma forma en los diferentes navegadores, hay q normalizarla.</li>
+
+        <li>Para normalizarla hay que relacionar un archivo CSS a nuestra página web, el cual contenga estilos simples, q puedan ser visualizados en cualquer navegador, o en su defecto en la mayoría de estos.</li>
+
+        <li>Uno de los estilos normalizados mas famosos solo los estilos de <a target="_blank" href="https://necolas.github.io/normalize.css/">Normalize.css</a></li>
+        
+        <li>
+            <p>Simplemente se descarga el archivo css, se lo coloca dentro del proyecto, y se lo pone dentro de <code>&lt;head&gt;</code> antes de los estilos que se le dará a nuestro sitio web. Ejemplo:</p>
+            <pre><code>
+                &lt;head&gt;
+                    &lt;link rel="stylesheet" href="normalize.css"&gt;
+                    &lt;link rel="stylesheet" href="estilos-propios.css"&gt;
+                &lt;/head&gt;
+            </code></pre>
+        </li>
+    </ul>
+    
+</body>
+</html>
