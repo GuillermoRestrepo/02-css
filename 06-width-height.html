@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="06-width-height.css">
+
+    <title>width & height</title>
+</head>
+<body>
+    <h1>PROPIEDADES <code>width</code> & <code>height</code></h1>
+    <p>Estas propiedades sirven para establecer el tamaño de un elemento.</p>
+    <ul>
+        <li><strong><code>width</code>:</strong> Define el ancho de un elemento.</li>
+
+        <li><strong><code>height</code>:</strong> Define el alto de un elemento.</li>
+    </ul></body>
+
+    <h2>¿Cómo funcionan?</h2>
+    <p>Por defecto, <code>width</code> y <code>height</code> se aplican al contenido del elemento. A menos que se utilice la propiedad <code>box-sizing</code> con el valor <code>border-box</code>.</p>
+
+    <h2>IMPORTANTE</h2>
+    <ul>
+        <li>
+            <p>Las propiedades (<code>width</code>) y (<code>height</code>) no funcionan en elementos de línea, ya que, los elementos de línea se caracterizan por adaptarse al tamaño de su contenido. Ejemplo:</p>
+            <table>
+                <tr>
+                    <td>
+                        <p><em>Código HTML:</em></p>
+<pre><code>
+&lt;body&gt;
+    &lt;div class="bloque"&gt;ESTE ES UN ELEMENTO DE BLOQUE&lt;/div&gt;
+    &lt;span class="linea"&gt;ESTE ES UN ELEMENTO DE LÍNEA&lt;/span&gt;
+&lt;/body&gt;
+</code></pre>
+                        <p><em>Código CSS:</em></p>
+<pre><code>
+.bloque, .linea{
+    width= "200px";
+    height= "200px";
+}
+</code></pre>
+                    </td>
+
+                    <td>
+                        <div class="bloque">ESTE ES UN ELEMENTO DE BLOQUE</div>
+                        <span class="linea">ESTE ES UN ELEMENTO DE LÍNEA</span>
+                    </td>
+                </tr>
+            </table>
+            <p>Como se puede notar, el elemento de bloque si se ve aectado por las propiedades (<code>width</code>) y (<code>height</code>), mientras que el elemento de línea no.</p>
+        </li>
+
+        <li>
+            <p>En caso que se desee dar medidas a un elemento de línea, este tiene que contar con la propiedad <code>display</code> con el valor <code>block</code> o <code>inline-block</code>. <strong>(VEREMOS EL USO DE ESTO MÁS ADELANTE)</strong></p>
+        </li>
+    </ul>
+
+    <h2>Valores Para Las Propiedades <code>width</code> / <code>height</code> </h2>
+    <ul>
+        <li>Pixeles (px): tamaño fijo.</li>
+
+        <li>Porcentaje (%): toma un tamaño porcentual del elemento q lo contiene.</li>
+
+        <li>Viewport units (vw, vh):
+            <ul>
+                <li>1vw = 1% del ancho de la pantalla.</li>
+                <li>1vh = 1% del alto de la pantalla.</li>
+            </ul>
+        </li>
+
+        <li>
+            <p>Palabras Clave</p>
+            <ul>
+                <li>auto: (por defecto) el navegador calcula el tamaño.</li>
+                <li>inherit: hereda el tamaño del elemento padre.</li>
+                <li>initial: restablece al valor por defecto del navegador.</li>
+                <li>unset: elimina cualquier valor, respetando herencia.</li>
+            </ul>
+        </li>
+    </ul>
+
+    
+</html>

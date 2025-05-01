@@ -1,0 +1,15 @@
+td {
+    border: 1px solid, black;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+.bloque{
+    margin: 5px;
+}
+
+.bloque, .linea {
+    background-color: cyan;
+    width: 100px;
+    height: 100px
+}
