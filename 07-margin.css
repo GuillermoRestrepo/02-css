@@ -1,0 +1,42 @@
+th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+.cuadrado {
+    width: 150px;
+    height: 150px;
+}
+
+.eb1, .eb2, .eb3, .eb4, .eb5, .eb6, .eb7, .eb8, .eb9, .eb10 {
+    width: 80px;
+    height: 80px;
+    background-color: lightcoral;
+}
+
+.el1, .el2, .el3, .el4, .el5, .el6 {
+    background-color: lightgreen;
+}
+
+.eb4, .eb5, .eb6, .el4, .el5, .el6 {
+    margin: 20px
+}
+
+.eb7 {
+    margin: auto;
+}
+
+.eb8 {
+    margin: 0px auto;
+}
+
+.eb9 {
+    margin-right: auto;
+}
+
+.eb10 {
+    margin-left: auto;
+}
+
+

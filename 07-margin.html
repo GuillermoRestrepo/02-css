@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="07-margin.css">
+    <title>margin & padding</title>
+</head>
+<body>
+    <h2><code>margin</code></h2>
+    <p>Generar espacio alrededor de un elemento. Es decir, sirve para separar un elemento de otro.</p>
+    <p><strong>Nota:</strong> a los elementos de línea unicamente se le puede aplicar margenes horizontales (Izquierdo y derecho).</p>
+    <table>
+        <thead>
+            <th>NO aplicando la propiedad margin:</th>
+            <th>SI Aplicando la propiedad margin:</th>
+        </thead>
+        
+        <tr>
+            <td colspan="2"><em>Elementos De Bloque:</em></td>
+        </tr>
+        <tr>
+            <td>
+                
+                <div class="eb1">Bloque #1</div>
+                <div class="eb2">Bloque #2</div>
+                <div class="eb3">Bloque #3</div>
+            </td>
+            <td>
+                
+                <div class="eb4">Bloque #4</div>
+                <div class="eb5">Bloque #5</div>
+                <div class="eb6">Bloque #6</div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2"><em>Elementos De Linea:</em></td>
+        </tr>
+        <tr>
+            <td>
+                <span class="el1">Línea #1</span>
+                <span class="el2">Línea #2</span>
+                <span class="el3">Línea #3</span>
+            </td>
+            <td>
+                <span class="el4">Línea #4</span>
+                <span class="el5">Línea #5</span>
+                <span class="el6">Línea #6</span>
+            </td>
+        </tr>
+    </table>
+
+    <h3>¿Como Funciona?</h3>
+    <ul>
+        <li>
+            <p>Si la propiedad margin tiene un solo valor:</p>
+            <pre><code>
+                /*
+                    Aplica a todos los lados, (arriba, abajo, izquierda, derecha)
+                */
+                margin: 20px;
+            </code></pre>
+        </li>
+        <li>
+            <p>Si la propiedad margin tiene dos valores:</p>
+            <pre><code>
+                /*
+                    El primer valor: El margen superior e inferior.
+                    El segundo valor: El margen izquierdo y derecho.
+                */
+                margin: 20px 10px;
+            </code></pre>
+        </li>
+        <li>
+            <p>Si la propiedad margin tiene tres valores:</p>
+            <pre><code>
+                /*
+                    El primer valor: El margen superior.
+                    El segundo valor: El margen izquierdo y derecho.
+                    El tercer valor: El margen inferior.
+                */
+                margin: 20px 10px 30px;
+            </code></pre>
+        </li>
+        <li>
+            <p>Si la propiedad margin tiene cuatro valores:</p>
+            <pre><code>
+                /*
+                    El primer valor: El margen superior.
+                    El segundo valor: El margen derecho.
+                    El tercer valor: El margen inferior.
+                    El cuarto valor: El margen izquierdo.
+                */
+                margin: 20px 10px 30px 40px;
+            </code></pre>
+        </li>
+    </ul>
+
+    <h3>Propiedades Individuales </h3>
+    <p>Util cuando se necesita generar un margen a uno o varaios lados especificos de un elemento.</p>
+    <pre><code>
+        /*Margen superior:*/
+        margin-top: 10px;
+
+        /*Margen derecho:*/
+        margin-right: 15px;
+
+        /*Margen inferior:*/
+        margin-bottom: 20px;
+
+        /*Margen izquierdo:*/
+        margin-left: 25px;
+    </code></pre>
+
+    <h3>Posibles valores</h3>
+    <ul>
+        <li>px: medida fija en pixeles.</li>
+        <li>%: pocentaje relativo al tamaño del contenedor.</li>
+        <li>
+            <p>auto: hace q el navegador calcule el margen del elemento.</p>
+            <p><strong>NOTAS SOBRE VALOR AUTO:</strong></p>
+            <ul>
+                <li>El valor (auto) no funciona para los elementos de línea.</li>
+                <li>El valor (auto) solo funciona si el elemento tiene tamaño horizontal definido (width).</li>
+                <li>El valor (auto) no funciona para los lados verticales (top / bottom).</li>
+                <li>Se suele utilizar el valor (auto), para centrar un elemento o para apegarlo a un lado en especifico.</li>
+            </ul>
+        </li>
+    </ul>
+    <table>
+        <thead>
+            <th><code>margin: auto;</code></th>
+            <th><code>margin: 0px auto;</code></th>
+            <th><code>margin-right: auto;</code></th>
+            <th><code>margin-left: auto;</code></th>
+        </thead>
+        <tr>
+            <td class="cuadrado">
+                <div class="eb7">Bloque #7</div>
+            </td>
+            <td class="cuadrado">
+                <div class="eb8">Bloque #8</div>
+            </td>
+            <td class="cuadrado">
+                <div class="eb9">Bloque #9</div>
+            </td>
+            <td class="cuadrado">
+                <div class="eb10">Bloque #10</div>
+            </td>
+        </tr>
+    </table>
+
+    <h3>Malas Pácticas</h3>
+    <ul>
+        <li>
+            <p>Al selector universal (*) no se le da (<code>margin: 0px;</code>), porq le quitará el margen a todos los elementos y no se sabría cuando empieza uno y termina el otro.</p>
+        </li>
+        <li>
+            <p>No se utiliza (<code>margin: 0px auto;</code>), porq reescribe los margenes verticales.</p>
+        </li>
+    </ul>
+
+    <h3>Buena Práctica</h3>
+    <p>Darle al elemento <code>&lt;body&gt;</code> un <code>margin: 0px;</code> si es recomendable, ya que, este debe de ocupar toda la pantalla displonible para pintar contenido.</p>
+
+
+</body>
+</html>
