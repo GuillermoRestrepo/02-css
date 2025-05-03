@@ -6,6 +6,83 @@
     <title>padding</title>
 </head>
 <body>
-    
+    <h1>Propiedad <code>padding</code></h1>
+    <p>Sirve para generar espacio interior entre el contenido de un elemento y su borde.</p>
+    <p><strong>NOTA:</strong> A diferencia de <code>margin</code> la propiedad <code>padding</code> si se aplica a los cuatro lados de un elemento de línea</p>
+    <p><strong>NOTA 2:</strong> A diferencia de <code>margin</code> la propiedad <code>padding</code> si modifica el tamaño del elemento.</p>
+    <h2>Funcionamiento</h2>
+    <ul>
+        <li>
+            <p>Un valor:</p>
+            <pre><code>
+                /*
+                    aplica a todos los lados
+                */
+                padding: 40px;
+            </code></pre>
+        </li>
+        <li>
+            <p>Dos valores:</p>
+            <pre><code>
+                /*
+                    1er valor: padding superior e inferior.
+                    2do valor: padding izquierdo y derecho.
+                */
+                padding: 40px 30px;
+            </code></pre>
+        </li>
+        <li>
+            <p>Tres valores:</p>
+            <pre><code>
+                /*
+                    1er valor: padding superior.
+                    2do valor: padding izquierdo y derecho.
+                    3er valor: padding inferior
+                */
+                padding: 40px 30px 20px;
+            </code></pre>
+        </li>
+        <li>
+            <p>Cuatro valores:</p>
+            <pre><code>
+                /*
+                    1er valor: padding superior.
+                    2do valor: padding derecho.
+                    3er valor: padding inferior.
+                    4to valor: padding izquierdo.
+                */
+                padding: 40px 30px 20px 10px;
+            </code></pre>
+        </li>
+    </ul>
+
+    <h2>Propiedades Individuales</h2>
+    <pre><code>
+        /*Margen superior*/
+        padding-top: 10px;
+
+        /*Margen derecho*/
+        padding-right: 15px;
+
+        /*Margen inferior*/
+        padding-bottom: 20px;
+
+        /*Margen izquierdo*/
+        padding-left: 25px;
+    </code></pre>
+
+    <h2>Valores Posibles</h2>
+    <ul>
+        <li>px: valores fijos pixeles.</li>
+        <li>%: porcentaje del ancho del contenedor.</li>
+    </ul>
+    <p><strong>NOTA:</strong> la propiedad padding no admite el valor auto.</p>
+
+    <h2>Malas Practicas</h2>
+    <p>Darle padding 0 al selector universal.</p>
+    <p>Evitar reescribir paddings verticales u orizontales al usar diferentes cantidades de valores, 2 3 o 4 valores.</p>
+
+    <h2>Buena Practica</h2>
+    <p>Es recomendable utilizar padding:0; en el elemento body, en caso de q este tenga un valor por defecto q disminya la pantalla pintable.</p>
 </body>
 </html>
