@@ -1,0 +1,53 @@
+th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+.eb1, .eb2, .eb3, .eb4, .eb5, .eb6, .eb7, .eb8, .eb9, .eb10 {
+    height: 150px;
+    width: 150px;
+    background-color: orange;
+    border-width: 10px;
+    border-color: black;
+}
+
+.eb1 {
+    border-style: none;
+}
+
+.eb2 {
+    border-style: hidden;
+}
+
+.eb3 {
+    border-style: solid;
+}
+
+.eb4 {
+    border-style: dashed;
+}
+
+.eb5 {
+    border-style: dotted;
+}
+
+.eb6 {
+    border-style: double;
+}
+
+.eb7 {
+    border-style: groove;
+}
+
+.eb8 {
+    border-style: ridge;
+}
+
+.eb9 {
+    border-style: inset;
+}
+
+.eb10 {
+    border-style: outset;
+}

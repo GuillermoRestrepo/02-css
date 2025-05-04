@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="09-border.css">
+    <title>Propiedad border</title>
+</head>
+<body>
+    <h1>PROPIEDAD <code>border</code></h1>
+    <p>Como su nombre lo indica, sirve para definir el borde de un elemento. (modifica el tamaño del elemento)</p>
+    <p>Por defecto, la propiedad <code>border</code> cuenta con 3 valores:</p>
+    <pre><code>
+        /*
+            border: width style color;
+        */
+        border: 1px solid black;
+    </code></pre>
+    
+    <p>Puede dividirse por su estilo</p>
+    <pre><code>
+        border-width: 1px;
+        border-style: solid;
+        border-color: black;
+    </code></pre>
+
+    <p>También puede dividirse por lado:</p>
+    <pre><code>
+        /*  Borde superior.  */
+        border-top: 1px solid yellow;
+        
+        /*  Borde derecho.  */
+        border-right: 3px solid blue;
+        
+        /*  Borde inferior.  */
+        border-bottom: 5px solid red;
+        
+        /*  Borde izquierdo.  */
+        border-left: 7px solid green;
+    </code></pre>
+
+    <p>También puede subdividirse en ambas a la vez:</p>
+    <pre><code>
+        border-top-width: 1px;
+        border-right-style: solid;
+        border-bottom-color: black;
+        border-left-width: 3px;
+    </code></pre>
+
+    <h2>Posibles Valores Para <code>border-width</code>:</h2>
+    <p><em>Valores númericos:</em></p>
+    <ul>
+        <li>px: píxeles, son valores fijos.</li>
+        <li>em, rem: Relativos al tamaño de la fuente.</li>
+    </ul>
+    <p><em>palabras clave:</em></p>
+    <ul>
+        <li>thin: Borde delgado (1px aproximadamente)</li>
+        <li>medium: Borde medio (3px aproximadamente)</li>
+        <li>thick: Borde grueso (5px aproximadamente)</li>
+    </ul>
+    
+    <h2>Posibles Valores Para <code>border-style</code>:</h2>
+    <p><em>Estilos 2D:</em></p>
+    <ul>
+        <li>
+            <p>none (sin borde)</p>
+        </li>
+        <li>
+            <p>solid (línea sólida)</p>
+        </li>
+        <li>
+            <p>dashed (línea discontinua)</p>
+        </li>
+        <li>
+            <p>dotted (punteado)</p>
+        </li>
+        <li>
+            <p>double (doble línea)</p>
+        </li>
+    </ul>
+    <table>
+        <tr>
+            <td><code>border-style: none;</code></td>
+            <td><code>border-style: hidden;</code></td>
+            <td><code>border-style: solid;</code></td>
+            <td><code>border-style: dashel;</code></td>
+            <td><code>border-style: dotted;</code></td>
+            <td><code>border-style: double;</code></td>
+        </tr>
+        <tr>
+            <td><div class="eb1">Bloque #1</div></td>
+            <td><div class="eb2">Bloque #2</div></td>
+            <td><div class="eb3">Bloque #3</div></td>
+            <td><div class="eb4">Bloque #4</div></td>
+            <td><div class="eb5">Bloque #5</div></td>
+            <td><div class="eb6">Bloque #6</div></td>
+        </tr>
+    </table>
+
+    <p><em>Estilos con efecto 3D:</em></p>
+    <ul>
+        <li>groove</li>
+        <li>ridge</li>
+        <li>inset</li>
+        <li>outset</li>
+    </ul>
+    <table>
+        <tr>
+            <td><code>border-style: groove;</code></td>
+            <td><code>border-style: ridge;</code></td>
+            <td><code>border-style: inset;</code></td>
+            <td><code>border-style: outset;</code></td>
+        </tr>
+        <tr>
+            <td><div class="eb7">Bloque #7</div></td>
+            <td><div class="eb8">Bloque #8</div></td>
+            <td><div class="eb9">Bloque #9</div></td>
+            <td><div class="eb10">Bloque #10</div></td>
+        </tr>
+    </table>
+
+    <h2>Posibles Valores Para <code>border-color</code>:</h2>
+    <p>Aqui puede ir cualquier color que se desee, proximaments se vera formas de manejar los colores.</p>
+</body>
+</html>
