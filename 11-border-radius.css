@@ -1,0 +1,44 @@
+table, td {
+    border-collapse: collapse;
+}
+td {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.eb1, .eb2, .eb3, .eb4, .eb5, .eb6 {
+    background-color: orange;
+    width: 250px;
+    height: 250px;
+    border: 1px solid black;
+}
+
+.eb1 {
+    border-radius: 30px;
+}
+
+.eb2 {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 60px;
+    border-bottom-left-radius: 80px;
+}
+
+.eb3 {
+    border-radius: 80px 60px 40px 20px;
+}
+
+.eb4 {
+    border-radius: 40px / 90px;
+}
+
+.eb5 {
+    border-top-left-radius: 10px 40px;
+    border-top-right-radius: 30px 60px;
+    border-bottom-right-radius: 50px 80px;
+    border-bottom-left-radius: 70px 100px;
+}
+
+.eb6 {
+    border-radius: 70px 50px 30px 10px / 100px 80px 60px 40px;
+}

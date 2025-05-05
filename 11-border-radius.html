@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="11-border-radius.css">
+    <title>border-radius</title>
+</head>
+<body>
+    <h1>PROPIEDAD (<code>border-radius</code>)</h1>
+    <p>Es una propiedad que se utiliza para redondear las esquinas de un elemento.</p>
+
+    <p>Se puede hacer de forma circular u ovalada.</p>
+     
+    <h2>Borde Circular</h2>
+    <ol>
+        <li>
+            <p>Borde circulares iguales en las 4 esquinas:</p>
+            <table>
+                <tr>
+                    <td>
+                        <p><em>Código HTML:</em></p>
+                        <pre><code>
+&lt;body&gt;
+    &lt;div class="eb1"&gt;&lt;/div&gt;
+&lt;/body&gt;
+                        </code></pre>
+                        <p><em>Código CSS:</em></p>
+                        <pre><code>
+.eb1 {
+    background-color: orange;
+    width: 250px;
+    height: 250px;
+    border-radius: 30px;
+}
+                        </code></pre>
+                    </td>
+                    <td>
+                        <div class="eb1"></div>
+                    </td>
+                </tr>
+            </table>
+        </li>
+        <li>
+            <p>Borde circulares diferentes valores en cada esquina:</p>
+            <table>
+                <tr>
+                    <td colspan="2">En Varias Líneas</td>
+                    <td colspan="2">En Una Sola Línea</td>
+                </tr>
+                <tr>
+                    <td>
+                        <p><em>Código HTML:</em></p>
+                        <pre><code>
+&lt;body&gt;
+    &lt;div class="eb2"&gt;&lt;/div&gt;
+&lt;/body&gt;
+                        </code></pre>
+                        <p><em>Código CSS:</em></p>
+                        <pre><code>
+.eb2 {
+    background-color: orange;
+    width: 250px;
+    height: 250px;
+
+    border-top-left-radius: 20px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 60px;
+    border-bottom-left-radius: 80px;
+}
+                        </code></pre>
+                    </td>
+                    <td>
+                        <div class="eb2"></div>
+                    </td>
+                    <td>
+                        <p><em>Código HTML:</em></p>
+                        <pre><code>
+&lt;body&gt;
+    &lt;div class="eb2"&gt;&lt;/div&gt;
+&lt;/body&gt;
+                        </code></pre>
+                        <p><em>Código CSS:</em></p>
+                        <pre><code>
+.eb3 {
+    background-color: orange;
+    width: 250px;
+    height: 250px;
+
+    border-radius: 80px 60px 40px 20px;
+}
+                        </code></pre>
+                    </td>
+                    <td>
+                        <div class="eb3"></div>
+                    </td>
+                </tr>
+            </table>
+        </li>
+    </ol>
+
+    <h2>Borde Óvalado</h2>
+    <p><strong>NOTA: </strong> (Eje horizontal / Eje vertical)</p>
+    <ol>
+        <li>
+            <p>Bordes óvalados igualmente en las 4 esquinas:</p>
+            <table>
+                <tr>
+                    <td>
+                        <p><em>Código HTML:</em></p>
+                        <pre><code>
+&lt;body&gt;
+    &lt;div class="eb4"&gt;&lt;/div&gt;
+&lt;/body&gt;
+                        </code></pre>
+                        <p><em>Código CSS:</em></p>
+                        <pre><code>
+.eb4 {
+    background-color: orange;
+    width: 250px;
+    height: 250px;
+    border-radius: 40px / 90px;
+}
+                        </code></pre>
+                    </td>
+                    <td>
+                        <div class="eb4"></div>
+                    </td>
+                </tr>
+            </table>
+        </li>
+        <li>
+            <p>Bordes óvalados con diferentes valores en cada esquina:</p>
+            <table>
+                <tr>
+                    <td colspan="2">En Varias Líneas</td>
+                    <td colspan="2">En Una Sola Línea</td>
+                </tr>
+                <tr>
+                    <td>
+                        <p><em>Código HTML:</em></p>
+                        <pre><code>
+&lt;body&gt;
+    &lt;div class="eb5"&gt;&lt;/div&gt;
+&lt;/body&gt;
+                        </code></pre>
+                        <p><em>Código CSS:</em></p>
+                        <pre><code>
+.eb5 {
+    background-color: orange;
+    width: 250px;
+    height: 250px;
+
+    border-top-left-radius: 10px 40px;
+    border-top-right-radius: 30px 60px;
+    border-bottom-right-radius: 50px 80px;
+    border-bottom-left-radius: 70px 100px;
+}
+                        </code></pre>
+                    </td>
+                    <td>
+                        <div class="eb5"></div>
+                    </td>
+                    <td>
+                        <p><em>Código HTML:</em></p>
+                        <pre><code>
+&lt;body&gt;
+    &lt;div class="eb2"&gt;&lt;/div&gt;
+&lt;/body&gt;
+                        </code></pre>
+                        <p><em>Código CSS:</em></p>
+                        <pre><code>
+.eb6 {
+    background-color: orange;
+    width: 250px;
+    height: 250px;
+
+    border-radius: 70px 50px 30px 10px / 100px 80px 60px 40px;
+}
+                        </code></pre>
+                    </td>
+                    <td>
+                        <div class="eb6"></div>
+                    </td>
+                </tr>
+            </table>
+        </li>
+    </ol>
+</body>
+</html>
