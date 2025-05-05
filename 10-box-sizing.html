@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="10-box-sizing.css">
+    <title>box-sizing</title>
+</head>
+<body>
+    <h1>PROPIEDAD (<code>box-sizing</code>)</h1>
+    <p>Esta propiedad define cómo se calcula el tamaño total de un elemento.</p>
+    <h2>Posibles Valores</h2>
+    <ul>
+        <li>
+            <h3><strong><code>content-box</code> (Valor Por Defecto)</strong></h3>
+            <p>Hace que las propiedades (<code>width</code>) y (<code>height</code>) solo se apliquen al contenido del elemento, es decir, para calcular el valor total del elemeto, habría q sumar el tamaño del contenido (<code>width / height</code>), el margen interno (<code>padding</code>) y el borde (<code>borde</code>) de este mismo. Ejemplo:</p>
+            <table>
+                <tr>
+                    <td>
+                        <p><em>Código HTML:</em></p>
+<pre><code>
+&lt;body&gt;
+    &lt;div class="eb1"&gt;Bloque #1&lt;/div&gt;
+&lt;/body&gt;
+</code></pre>
+                        <p><em>Código CSS:</em></p>
+<pre><code>
+.eb1 {
+    background-color: orange;
+    width: 150px;
+    height: 150px;
+    padding: 20px;
+    border: 10px solid black;
+}
+</code></pre>
+                    </td>
+                    <td>
+                        <div class="eb1">Bloque #1</div>
+                    </td>
+                </tr>
+            </table>
+            <p>En este ejemplo se puede ver que el tamaño real del elemento es de 210x210 píxeles a pesar de haber asignado 150 píxeles en las propiedades (<code>width & height</code>)</p>
+        </li>
+        <li>
+            <h3><strong><code>border-box</code></strong></h3>
+            <p>Este valor hace que las propiedades (<code>width</code>) y (<code>height</code>) definan el tamaño total del elemento.</p>
+            <table>
+                <tr>
+                    <td>
+                        <p><em>Código HTML:</em></p>
+<pre><code>
+&lt;body&gt;
+    &lt;div class="eb2"&gt;Bloque #2&lt;/div&gt;
+&lt;/body&gt;
+</code></pre>
+                        <p><em>Código CSS:</em></p>
+<pre><code>
+.eb2 {
+    box-sizing: border-box;
+    background-color: orange;
+    width: 150px;
+    height: 150px;
+    padding: 20px;
+    border: 10px solid black;
+}
+</code></pre>
+                    </td>
+                    <td>
+                        <div class="eb2">Bloque #2</div>
+                    </td>
+                </tr>
+            </table>
+            <p>En este ejemplo se puede notar como el elemento mide exactamente lo que se asignó a las propiedades (<code>width & height</code>), aun contando con el mismo borde y el mismo margen interno del primer ejemplo.</p>
+        </li>
+    </ul>
+</body>
+</html>

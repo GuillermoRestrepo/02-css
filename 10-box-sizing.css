@@ -1,0 +1,24 @@
+table, td {
+    border-collapse: collapse;
+}
+
+td {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.eb1 {
+    background-color: orange;
+    width: 150px;
+    height: 150px;
+    padding: 20px;
+    border: 10px solid black;
+}
+.eb2 {
+    box-sizing: border-box;
+    background-color: orange;
+    width: 150px;
+    height: 150px;
+    padding: 20px;
+    border: 10px solid black;
+}
