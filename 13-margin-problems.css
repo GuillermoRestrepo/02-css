@@ -1,0 +1,44 @@
+table, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 20px;
+}
+.eb1, .eb2, .eb3, .eb4 {
+    background-color: orange;
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+}
+
+.eb1, .eb2 {
+    margin: 20px;
+}
+.eb3, .eb4 {
+    margin: 20px 20px 40px 20px;
+}
+
+.celda {
+    padding: 0px;
+}
+
+.ElementoPadre, .ElementoPadre2, .ElementoPadre3, .ElementoPadre4 {
+    background-color: orange;
+    width: 250px;
+    height: 50px;    
+}
+
+.ElementoHijo, .ElementoHijo2, .ElementoHijo3, .ElementoHijo4 {
+    margin: 10px;
+}
+
+.ElementoPadre2 {
+    overflow: hidden;
+}
+
+.ElementoPadre3 {
+    padding-top: 0.1px;
+}
+
+.ElementoPadre4 {
+    border-top: 1px solid orange;
+}

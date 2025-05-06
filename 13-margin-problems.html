@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="13-margin-problems.css">
+    <title>margin problems</title>
+</head>
+<body>
+    <h1>MARGIN PROBLEMS</h1>
+    <p>existen dos problemas principales al tiliza margenes en css.</p>
+    <h2>Colapsado De Margenes</h2>
+    <p>Conocido como (margin collapsing), es un problema que tienen los margenes verticales.</p>
+    <p>Al haber dos elementos, uno encima del otro, los margenes verticales no se suman, estos se super ponen. Ejemplo:</p>
+    <table>
+        <tr>
+            <td>Código:</td>
+            <td>Como Se Ve:</td>
+            <td>Como Deberia De Verse:</td>
+        </tr>
+        <tr>
+            <td>
+                <p><em>Código HTML:</em></p>
+                <pre><code>
+&lt;body&gt;
+    &lt;div Class="eb1"&gt;&lt;/div&gt;
+    &lt;div Class="eb2"&gt;&lt;/div&gt;
+&lt;/body&gt;
+                </code></pre>
+                <p><em>Código CSS:</em></p>
+                <pre><code>
+.eb1 {
+    background-color: orange;
+    width: 150px;
+    height: 150px;
+    margin: 20px
+    border: 1px solid black;
+}
+                </code></pre>
+            </td>
+            <td>
+                <div Class="eb1"></div>
+                <div Class="eb2"></div>
+            </td>
+            <td>
+                <div Class="eb3"></div>
+                <div Class="eb4"></div>
+            </td>
+        </tr>
+    </table>
+    <p>Como se puede notar, el margen inferior del primer elemento, y el margen superior del segundo elemento, se superponen, haciendo q solo haya una separación de 20 píxeles, en lugar de 40 como debería de ser.</p>
+    <p>PARA SOLUCIONAR ESTO, SE SUELE DAR UNICAMENTE MARGENES INFERIORES, EVITANDO ASÍ LA SUPERPOSICION DE MARGENES.</p>
+    
+    <h2>Margen De Elemento Hijo</h2>
+    <p>Los margenes de un elemento hijo, puede desbordarse del elemento padre, y puede afectar a la posicion de este ultimo.</p>
+    <table>
+        <tr>
+            <td>Código:</td>
+            <td>
+                <p>Como aparece por defecto:</p>
+                <p>El margen de 10px del contenedor hijo, se desborda del contenedor padre en su eje vertical. </p>
+
+            </td>
+            <td>
+                <p>Solución #1:</p>
+                <p>Controlar el contenido desbordado del contenedor padre (<code>overflow: hidden;</code>)</p>
+            </td>
+            <td>
+                <p>Solución #2:</p>
+                <p>Dar un margen interno diminuto al contenedor padre (<code>padding: 0.1px;</code>)</p>
+            </td>
+            <td>
+                <p>Solución #3:</p>
+                <p>Dar al contenedor padre un borde superior diminuto y del mismo color (<code>border-top: 0.1px solid orange;</code>).</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p><em>Código HTML:</em></p>
+                <pre><code>
+&lt;body&gt;
+    &lt;div class="ElementoPadre"&gt;
+        &lt;h2 class="ElementoHijo"&gt;Encabezado&lt;/h2&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+                </code></pre>
+                <p><em>Código CSS:</em></p>
+                <pre><code>
+.ElementoPadre {
+    background-color: orange;
+    width: 250px;
+    height: 50px;
+}
+
+.ElementoHijo {
+    margin: 10px;
+}
+                </code></pre>
+            </td>
+            <td class="celda">
+                <div Class="ElementoPadre">
+                    <h2 Class="ElementoHijo">Encabezado</h2>
+                </div>
+            </td>
+            <td class="celda">
+                <div Class="ElementoPadre2">
+                    <h2 Class="ElementoHijo2">Encabezado</h2>
+                </div>
+            </td>
+            <td class="celda">
+                <div Class="ElementoPadre3">
+                    <h2 Class="ElementoHijo3">Encabezado</h2>
+                </div>
+            </td>
+            <td class="celda">
+                <div Class="ElementoPadre4">
+                    <h2 Class="ElementoHijo4">Encabezado</h2>
+                </div>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
