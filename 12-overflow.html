@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="12-overflow.css">
+    <title>overflow</title>
+</head>
+<body>
+    <h1>PROPIEDAD <code>overflow</code></h1>
+    <p>Es una propiedad, que sirve para gestionar el contenido que supera en tamaño su contenedor, es decir, el contenido q se desborda.</p>
+    <p>Ejemplo de contenido desbordado:</p>
+    <div class="eb1">
+        <p class="parrafo">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias voluptatem voluptatum porro impedit doloribus optio consectetur dignissimos, dicta quas velit commodi. Ullam corrupti eaque maiores, quos impedit neque delectus amet.</p>
+        <p class="parrafo">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum architecto asperiores unde eum, dolorem ab obcaecati culpa. Explicabo accusamus enim recusandae, unde eaque molestiae tempore sapiente corporis cupiditate, ipsa id.</p>
+    </div>
+    
+    <h2>Posibles Valores De La Propiedad (<code>overflow</code>)</h2>
+    <ol>
+        <li>
+            <h3><code>overflow: visible;</code></h3>
+            <p>Este es el valor por defecto, deja que el contenido desbordado sea visible.</p>
+            <div class="eb2">
+                <p class="parrafo">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias voluptatem voluptatum porro impedit doloribus optio consectetur dignissimos, dicta quas velit commodi. Ullam corrupti eaque maiores, quos impedit neque delectus amet.</p>
+            </div>
+        </li>
+        <li>
+            <h3><code>overflow: hidden;</code></h3>
+            <p>Hace que el contenido desbordado no sea visible.</p>
+            <div class="eb3">
+                <p class="parrafo">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias voluptatem voluptatum porro impedit doloribus optio consectetur dignissimos, dicta quas velit commodi. Ullam corrupti eaque maiores, quos impedit neque delectus amet.</p>
+            </div>
+        </li>
+        <li>
+            <h3><code>overflow: scroll;</code></h3>
+            <p>Hace que el contenedor tenga una barra de dezplazamiento para poder visualizar el contenido desbordado.</p>
+            <div class="eb4">
+                <p class="parrafo">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias voluptatem voluptatum porro impedit doloribus optio consectetur dignissimos, dicta quas velit commodi. Ullam corrupti eaque maiores, quos impedit neque delectus amet.</p>
+            </div>
+        </li>
+        <li>
+            <h3><code>overflow: auto;</code></h3>
+            <p>Tambien hace que el contenedor tenga una barra de desplazamiento, peroo solo si es necesario</p>
+            <table>
+                <tr>
+                    <td><strong>NO</strong> aparece la barra de desplazamiento porque <strong>NO</strong> es necesaria.</td>
+                    <td><strong>SI</strong> aparece la barra de desplazamiento porque <strong>SI</strong> es necesaria.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="eb5">
+                            <p class="parrafo">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias voluptatem voluptatum porro impedit doloribus optio consectetur dignissimos, dicta quas velit commodi. Ullam corrupti eaque maiores, quos impedit neque delectus amet.</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="eb5">
+                            <p class="parrafo">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </li>
+    </ol>
+
+    <h2>Propiedad (<code>overflow</code>) Dividida</h2>
+    <p>Se puede dividir esta propieda en eje horizontal y eje vertical.</p>
+    <p>Para esto es necesarioespecificar a que eje se aplicará la propiedad (<code>oveflow-x</code>) & (<code>overflow-y</code>). Ejemplo:</p>
+    <p><strong>NOTA:</strong> NO ES ACONSEJABLE UTILIZAR OVERFLOW POR EJES SEPARADOS, YA Q AL APLICARLE UN VALOR A UN EJE EL OTRO SE AUTO PROGRAMA PARA USAR OTRO VALOR, ES UN LIOOO!.</p>
+    <table>
+        <tr>
+            <td>Original</td>
+            <td><code>overflow-x: hidden;</code></td>
+            <td><code>overflow-y: hidden;</code></td>
+        </tr>
+        <tr>
+            <td class="celda">
+                <div class="eb6">
+                    <div class="eb8"></div>
+                    <div class="eb9"></div>
+                </div>
+            </td>
+            <td class="celda">
+                <div class="eb7">
+                    <div class="eb8"></div>
+                    <div class="eb9"></div>
+                </div>
+            </td>
+            <td class="celda">
+                <div class="eb10">
+                    <div class="eb8"></div>
+                    <div class="eb9"></div>
+                </div>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

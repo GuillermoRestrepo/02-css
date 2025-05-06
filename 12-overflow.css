@@ -1,0 +1,78 @@
+table, td {
+    border-collapse: collapse;
+    border: 1px solid black;
+    padding: 20px;
+}
+
+table {
+
+}
+
+.parrafo {
+    margin: 10px;
+}
+
+.eb1, .eb2, .eb3, .eb4, .eb5, .eb6, .eb7, .eb10 {
+    background-color: orange;
+    border: 1px solid black;
+}
+
+.eb1, .eb6, .eb7, .eb10 {
+    width: 250px;
+    height: 250px;
+}
+
+.eb1 {
+    margin-bottom: 70px;
+}
+
+.eb2, .eb3, .eb4, .eb5{
+    width: 150px;
+    height: 150px;
+}
+
+.eb2 {
+    overflow: visible;
+    margin-bottom: 120px;
+}
+
+.eb3 {
+    overflow: hidden;
+}
+
+.eb4 {
+    overflow: scroll;
+}
+
+.eb5 {
+    overflow: auto;
+    margin: auto;
+}
+
+.celda {
+    padding: 50px;
+}
+
+.eb8 {
+    width: 300px;
+    height: 150px;
+    background-color: lightblue;
+    margin: 10px auto;
+}
+
+.eb9 {
+    width: 150px;
+    height: 300px;
+    background-color: lightblue;
+    margin: 10px auto;
+}
+
+.eb7{
+    overflow-x: hidden;
+    overflow-y: visible;
+}
+
+.eb10{
+    overflow-y: hidden;
+    overflow-x: visible !important;
+}
