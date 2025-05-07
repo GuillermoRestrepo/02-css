@@ -1,0 +1,28 @@
+table, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+.el1, .el2, .eb1, .eb2, .el3, .eb3, .el4, .eb4 , .el5, .eb5, .el6, .eb6 {
+    background-color: orange;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+
+.el2 {
+    display: block;
+}
+
+.eb2 {
+    display: inline;
+}
+
+.el4, .eb4 {
+    display: inline-block;
+}
+
+.el6, .eb6 {
+    display: none;
+}

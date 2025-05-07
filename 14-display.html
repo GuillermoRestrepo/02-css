@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="14-display.css">
+    <title>display</title>
+</head>
+<body>
+    <h1>Propiedad (<code>display</code>)</h1>
+    <p>Permite que los elementos de línea cambien a elementos de bloque y viceversa.</p>
+    <p><strong>NOTA:</strong> Tabién sirve para posicionar los elementos con flex y grid, pero eso se verá mas adelante.</p>
+    <h2>Posibles Valores</h2>
+    <p><strong>Nota:</strong>Recordemos que los elementos de línea no pueden tener medidas, ni margenes verticales.</p>
+    <h3><code>display: block;</code></h3>
+    <p>Convierte un elemento de línea en un elemento de bloque. Ejemplo:</p>
+    <table>
+        <tr>
+            <td>Código</td>
+            <td>SIN (<code>display: block;</code>)</td>
+            <td>CON (<code>display: block;</code>)</td>
+        </tr>
+        <tr>
+            <td>
+                <p><em>Código En HTML:</em></p>
+                <pre><code>
+&lt;body&gt;
+    &lt;span class="el1"&gt;Elemento De Línea #1&lt;/span&gt;
+    &lt;span class="el1"&gt;Elemento De Línea #2&lt;/span&gt;    
+&lt;/body&gt;
+                </code></pre>
+
+                <p><em>Código En CSS:</em></p>
+                <pre><code>
+.el1 {
+    background-color: orange;
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+}
+                </code></pre>
+            </td>
+            <td>
+                <span class="el1">Elemento De Línea #1</span>
+                <span class="el1">Elemento De Línea #2</span>
+            </td>
+            <td>
+                <span class="el2">Elemento De Línea #1</span>
+                <span class="el2">Elemento De Línea #2</span>
+            </td>
+        </tr>
+    </table>
+
+    <h3><code>display: inline;</code></h3>
+    <p>Convierte un elemento de bloque en un elemento de línea. Ejemplo:</p>
+    <table>
+        <tr>
+            <td>Código</td>
+            <td>SIN (<code>display: inline;</code>)</td>
+            <td>CON (<code>display: inline;</code>)</td>
+        </tr>
+        <tr>
+            <td>
+                <p><em>Código En HTML:</em></p>
+                <pre><code>
+&lt;body&gt;
+    &lt;div class="eb1"&gt;Elemento De Bloque #2&lt;/div&gt;
+&lt;/body&gt;
+                </code></pre>
+
+                <p><em>Código En CSS:</em></p>
+                <pre><code>
+.eb1 {
+    background-color: orange;
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+}
+                </code></pre>
+            </td>
+            <td>
+                <div class="eb1">Elemento De Bloque #1</div>
+                <div class="eb1">Elemento De Bloque #2</div>
+            </td>
+            <td>
+                <div class="eb2">Elemento De Bloque #1</div>
+                <div class="eb2">Elemento De Bloque #2</div>
+            </td>
+        </tr>
+    </table>
+
+    <h3><code>display: inline-block;</code></h3>
+    <p>Hace que cualquier elemento, ya sea de línea o de bloque, se comporte como un elemento de línea, pero que pueda tener medidas y margenes como si fuera un elemento de bloque. Ejemplo:</p>
+    <table>
+        <tr>
+            <td>Código</td>
+            <td>SIN (<code>display: inline-block;</code>)</td>
+            <td>CON (<code>display: inline-block;</code>)</td>
+        </tr>
+        <tr>
+            <td>
+                <p><em>Código En HTML:</em></p>
+                <pre><code>
+&lt;body&gt;
+    &lt;span class="el3"&gt;Elemento De Línea&lt;/span&gt;        
+    &lt;div class="eb3"&gt;Elemento De Línea&lt;/div&gt;
+    
+&lt;/body&gt;
+                </code></pre>
+
+                <p><em>Código En CSS:</em></p>
+                <pre><code>
+.el1 {
+    background-color: orange;
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+}
+                </code></pre>
+            </td>
+            <td>
+                <span class="el3">Elemento De Línea</span>
+                <div class="eb3">Elemento De Bloque</div>
+            </td>
+            <td>
+                <span class="el4">Elemento De Línea</span>
+                <div class="eb4">Elemento De Bloque</div>
+            </td>
+        </tr>
+    </table>
+
+    <h3><code>display: none;</code></h3>
+    <p>Hace q el elemento no sea visible, se sigue cargando, pero no es visible ni interactuable para el usuario (Útil para activar por medio de Java Script). Ejemplo:</p>
+    <table>
+        <tr>
+            <td>Código</td>
+            <td>SIN (<code>display: none;</code>)</td>
+            <td>CON (<code>display: none;</code>)</td>
+        </tr>
+        <tr>
+            <td>
+                <p><em>Código En HTML:</em></p>
+                <pre><code>
+&lt;body&gt;
+    &lt;span class="el3"&gt;Elemento De Línea&lt;/span&gt;        
+    &lt;div class="eb3"&gt;Elemento De Línea&lt;/div&gt;
+    
+&lt;/body&gt;
+                </code></pre>
+
+                <p><em>Código En CSS:</em></p>
+                <pre><code>
+.el1 {
+    background-color: orange;
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+}
+                </code></pre>
+            </td>
+            <td>
+                <span class="el5">Elemento De Línea</span>
+                <div class="eb5">Elemento De Bloque</div>
+            </td>
+            <td>
+                <span class="el6">Elemento De Línea</span>
+                <div class="eb6">Elemento De Bloque</div>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
