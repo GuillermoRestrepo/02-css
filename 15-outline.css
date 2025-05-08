@@ -1,0 +1,53 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+table, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+.eb1, .eb2, .eb3, .eb4, .eb5, .eb6, .eb7, .eb8, .eb9, .eb10, .el1, .el2 {
+    background-color: orange;
+    width: 100px;
+    height: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 5px solid black;
+}
+.eb5, .eb6, .eb7, .eb8 {
+    display: inline-block;
+}
+
+.eb2, .eb3, .eb4, .eb6, .eb7, .eb10, .el1 {
+    outline: 5px solid lightseagreen;
+    
+}
+
+.eb3, .eb6, .eb7, .eb10, .el1 {
+    outline-offset: 20px;
+}
+
+.eb4 {
+    outline-offset: -20px;
+}
+
+.celda {
+    width: 200px;
+    height:200px
+}
+
+.eb5, .eb8 {
+    border-radius: 70px;
+}
+
+.celda2 {
+    width: 300px;
+    height:300px;
+    padding: 40px;
+}

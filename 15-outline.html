@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="15-outline.css">
+    <title>outline</title>
+</head>
+<body>
+    <h1>Propiedad (<code>outline</code>)</h1>
+    <p>Esta propiedad crea un borde externo y tiene ciertas cualidades:</p>
+    <ul>
+        <li>Al igual q la propiedad (<code>border</code>), (<code>outline</code>) se divide en (<code>outline-width</code>), (<code>outline-style</code>) y (<code>outline-color</code>).</li>
+        <li>A diferencia de la propiedad (<code>border</code>), (<code>outline</code>) no puede aplicar los estilos separados por lado. (No Se Puede <code>outline-top-color</code>).</li>
+        <li>A diferencia de la propiedad (<code>border</code>), (<code>outline</code>) no afecta al tamaño del elemento y tampoco se puede redondear.</li>
+        <li>A diferencia de la propiedad (<code>margin</code>), (<code>outline</code>) no sirve para separar elemetos entre sí.</li>
+        <li>El borde externo que la propiedad (<code>outline</code>) genera, unicamente se superpone sobre otros elementos, o los otros elementos se superponen a este, esto debido a la propiedad (<code>z-index</code>) que se verá más adelante.</li>
+        <li>Cuenta con la propiedad complementaria (<code>outline-offset</code>) que sirve para indicar la separación que existe entre el elemento y el borde externo.</li>
+        <li>La separación entre el elemento y el borde externo, puede ser negativo o positivo, haciendo que el borde se muestre dentro o fuera del elemento.</li>
+    </ul>
+    <table>
+        <tr>
+            <td colspan="2">SIN la propiedad (<code>outline</code>)</td>
+            <td colspan="2">CON la propiedad (<code>outline</code>)</td>
+        </tr>
+        <tr>
+            <td>
+                <p><em>Código en Html</em></p>
+                <pre><code>
+&lt;body&gt;
+    &lt;div class="eb1"&gt;Bloque #1&lt;/div&gt;
+&lt;/body&gt;
+                </code></pre>
+
+                <p><em>Código en CSS</em></p>
+                <pre><code>
+.eb1 {
+    background-color: orange;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    border: 5px solid black;
+}
+                </code></pre>
+            </td>
+            <td>
+                <div class="eb1">Bloque #1</div>
+            </td>
+            <td>
+                <p><em>Código en Html</em></p>
+                <pre><code>
+&lt;body&gt;
+    &lt;div class="eb2"&gt;Bloque #2&lt;/div&gt;
+&lt;/body&gt;
+                </code></pre>
+
+                <p><em>Código en CSS</em></p>
+                <pre><code>
+.eb2 {
+    background-color: orange;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    border: 5px solid black;
+
+    <strong>outline: 5px solid lightseagreen;</strong>
+}
+                </code></pre>
+            </td>
+            <td>
+                <div class="eb2">Bloque #2</div>
+            </td>
+        </tr>
+    </table>
+    
+    
+    <h2>Propiedad Complementaria (<code>outline-offset</code>)</h2>
+    <table>
+        <tr>
+            <td>
+                <em>Separacion Externa:</em><br>
+                <code>outline-offset: 20px</code>
+            </td>
+            <td>
+                <em>Separación interna:</em><br>
+                <code>outline-offset: -20px</code>
+            </td>
+        </tr>
+        <tr>
+            <td class="celda">
+                <div class="eb3">Bloque #3</div>
+            </td>
+            <td class="celda">
+                <div class="eb4">Bloque #4</div>
+            </td>
+        </tr>
+    </table>
+
+    <h2>Comportamiento Con Otro Elemento</h2>
+    <ul>
+        <li>
+            <p>Cuando los elementos tinen la propiedad (<code>display= inline-block;</code>)</p>
+            <table>
+                <tr>
+                    <td><em>Borde externo sobre elemnto</em></td>
+                    <td><em>Elemento sobre borde externo</em></td>
+                </tr>
+                <tr>
+                    <td class="celda2">
+                        <div class="eb5">Bloque #5</div>
+                        <div class="eb6">Bloque #6</div>
+                    </td>
+                    <td class="celda2">
+                        <div class="eb7">Bloque #7</div>
+                        <div class="eb8">Bloque #8</div>
+                    </td>
+                </tr>
+            </table>
+        </li>
+
+        <li>
+            <p>Cuando los elementos tinen la propiedad (<code>display= block;</code>) o (<code>display= inline;</code>) siempre el borde externo se superpone al otro elemento.</p>
+            <table>
+                <tr>
+                    <td><em>Elementos De Bloque</em></td>
+                    <td><em>Elementos De Línea</em></td>
+                </tr>
+                <tr>
+                    <td class="celda2">
+                        <div class="eb9">Bloque #9</div>
+                        <div class="eb10">Bloque #10</div>
+                        
+                    </td>
+                    <td class="celda2">
+                        <span class="el1">Línea #1</span>
+                        <span class="el2">Línea #2</span>
+                    </td>
+                </tr>
+            </table>
+        </li>
+    </ul>
+    </ul>
+</body>
+</html>
