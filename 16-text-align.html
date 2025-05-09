@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="16-text-align.css">
+    <title>text-align</title>
+</head>
+<body>
+    <h1>PROPIEDAD (<code>text-align</code>)</h1>
+    <p>Sirve para alinear el contenido de un elemento.</p>
+    <h2>Posibles Valores</h2>
+    <table class="tabla">
+        <tr>
+            <td class="celda">
+                <p>Alineado A La Izquierda (Valor Por Defecto)</p>
+                <code>text-align: left</code>
+            </td>
+            <td class="celda">
+                <p>Centrado</p>
+                <code>text-align: center</code>
+            </td>
+            <td class="celda">
+                <p>Alineado A La Derecha</p>
+                <code>text-align: right</code>
+            </td>
+            <td class="celda">
+                <p>Justificado</p>
+                <code>text-align: justify</code>
+            </td>
+        </tr>
+        <tr>
+            <td class="celda">
+                <p class="parrafo1">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate deserunt dolor, neque recusandae vero rerum dolore aut veritatis enim impedit. Iusto debitis aspernatur nemo quis sint excepturi nostrum ipsa eveniet.
+                </p>
+            </td>
+            <td class="celda">
+                <p class="parrafo2">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate deserunt dolor, neque recusandae vero rerum dolore aut veritatis enim impedit. Iusto debitis aspernatur nemo quis sint excepturi nostrum ipsa eveniet.
+                </p>
+            </td>
+            <td class="celda">
+                <p class="parrafo3">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate deserunt dolor, neque recusandae vero rerum dolore aut veritatis enim impedit. Iusto debitis aspernatur nemo quis sint excepturi nostrum ipsa eveniet.
+                </p>
+            </td>
+            <td class="celda">
+                <p class="parrafo4">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate deserunt dolor, neque recusandae vero rerum dolore aut veritatis enim impedit. Iusto debitis aspernatur nemo quis sint excepturi nostrum ipsa eveniet.
+                </p>
+            </td>
+        </tr>
+    </table>
+    <h2>Notas</h2>
+    <ol>
+        <li>
+            <em>Cuando No Se Usa (<code>text-align</code>)</em>
+            <ul>
+                <li>No se usa en elementos de linea.</li>
+                <li>No se usa en elementos que tengan la propiedad (<code>display</code>) con el valor (<code>inline</code> o <code>inline-block</code>)</li>
+            </ul>
+        </li>
+        <li>
+            <em>Posibles Soluciones:</em>
+            <ul>
+                <li>Si no es un elemento de bloque, hay que hacer que sea de bloque con (<code>display: block;</code>).</li>
+                <li>Encapsular el elemento de línea en un elemento de bloque y aplicar la propiedad (<code>text-align</code>) en el elemento de bloque. (SOLUCION NO RECOMENDADA)</li>
+            </ul>
+        </li>
+        <li>
+            <em>No Hay Que Confundir Alinear Contenido Con Alinear Contenedor:</em>
+            <ul>
+                <li>
+                    Para centrar un contenido se utiliza la propiedad (<code>text-align: center;</code>)
+                </li>
+                <li>
+                    Para centrar un contenedor se usa la propiedad (<code>margin-(left/right): auto;</code>).
+                </li>
+            </ul>
+        </li>
+    </ol>
+    <h2>Adicional</h2>
+    <p>Las imágenes y vídeos tienen por defecto la propiedad (<code>display: inline-block;</code>), en caso de que se desee aplicar la propiedad (<code>text-align</code>), habrían convertirlos en elementos de bloque (<code>display: block;</code>)</p>
+</body>
+</html>

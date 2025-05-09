@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+table, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.celda {
+    width: 330px;
+}
+
+.tabla {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.parrafo1 , .parrafo2, .parrafo3, .parrafo4 {
+    background-color: orange;
+    width: 250px;
+    height:250px;
+    margin-left: auto;
+    margin-right: auto;   
+    padding: 15px;
+    border: 1px solid black;
+}
+
+.parrafo1 {
+    text-align: left;
+}
+
+.parrafo2 {
+    text-align: center;
+}
+
+.parrafo3 {
+    text-align: right;
+}
+
+.parrafo4 {
+    text-align: justify;
+}
