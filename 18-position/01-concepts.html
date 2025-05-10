@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conseptos</title>
+</head>
+<body>
+    <h1>CONCEPTOS DE POSICIONAMIENTO</h1>
+    <ul>
+        <li>
+            <p><strong>Fujo De Rederizado:</strong> es la forma en la que un navegador carga el contenido de una página web, lo hace de arriba hacia abajo y de izquierda a derecha.</p>
+        </li>
+        <li>
+            <p><strong>Punto De Origen De Un Elemento:</strong> a  partir de este punto se calculará el desplazamiento de un elemento, es la esquina superior izquierda.</p>
+        </li>
+        <li>
+            <p><strong>Espacio Reservado:</strong> Es el espacio que ocupa un elemento pintado en el navegador.</p>
+        </li>
+        <li>
+            <p><strong>Elemento Posicionado:</strong> se considera que un elemento está posicionado, cuando el valor de la propiedad (<code>position</code>) de este elemento es diferente a (<code>static</code>), siendo este el valor por defecto de todo elemento.</p>
+        </li>
+        <li>
+            <p><strong>Stackin context (Contexto De Apilamiento):</strong> es el orden en el que se superponen los elementos dentro de un contenedro.</p>
+        </li>
+        <li>
+            <p><strong>¿Qué Pasa Caundo Se Posiciona Un Elemento?:</strong> se habilitan 5 propiedades que permiten mover el elemento en los 3 ejes, horizontal, vertical y profundidad. Estas propiedades son:</p>
+            <ul>
+                <li>
+                    <p><em>top:</em> sirve para mover un elemento desde la parte superior de su contenedor, si el valor es positivo, mueve el elemento hacia abajo, si es negatio lo mueve hacia arriba.</p>
+                </li>
+                <li>
+                    <p><em>right:</em> sirve para mover un elemento desde la parte derecha de su contenedor, si el valor es positivo, se mueve hacia la izquierda, si es negativo, hacia la derecha.</p>
+                </li>
+                <li>
+                    <p><em>bottom:</em> sirve para mover un elemento desde la parte inferior de su contenedor, si el valor es positivo, mueve el elemento hacia arriba, si es negatio lo mueve hacia abajo.</p>
+                </li>
+                <li>
+                    <p><em>left:</em> sirve para mover un elemento desde la parte izquierda de su contenedor, si el valor es positivo, se mueve hacia la derecha, si es negativo, hacia la izquierda.</p>
+                </li>
+                <li>
+                    <p><em>z-index:</em> sirve para indicar su posición en el eje z que representa la profundidad, es decir, cual elemento se superpone a caul.</p>
+                </li>
+                <li>
+                    <p><strong>NOTA:</strong> Si se utiliza la propiedad top o right, automaticamente inutilizan las propiedades bottom o left respectivamente.</p>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <h2>Posibles Valores De La Propiedad Position</h2>
+    <ul>
+        <li>
+            <p><strong><code>static</code> (Valor Por Defecto):</strong></p>
+            <ul>
+                <li>El elemento se posiciona según el flujo normal del documento.</li>
+                <li>No se puede usar las propiedades <code>top</code>, <code>left</code>, etc.</li>
+            </ul>
+        </li>
+        <li>
+            <p><a target="_blank" href="02-position-relative.html"><code>relative</code></a></p>
+        </li>
+        <li>
+            <p><a target="_blank" href="03-position-absolute.html"><code>absolute</code></a></p>
+        </li>
+        <li>
+            <p><a target="_blank" href="04-position-fixed.html"><code>fixed</code></a></p>
+        </li>
+        <li>
+            <p><a target="_blank" href="05-position-sticky.html"><code>sticky</code></a></p>
+        </li>
+    </ul>
+</body>
+</html>
