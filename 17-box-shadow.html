@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="17-box-shadow.css">
+    <title>box-shadow</title>
+</head>
+<body>
+    <h1>PROPIEDAD (<code>box-shadow</code>)</h1>
+    <ul>
+        <li>Es una propiedad que sirve para dar efectos 3D, sombras o relieves a un elemento.</li>
+        <li>Crea una o varias copias del elemento, pero sin contenido.</li>
+        <li>Posiciona dichas copias detras del elemento en cuestión.</li>
+        <li>Estas copias pueden cambiar su posición, su color, su forma, difuminarse, invertirse  y demas.</li>
+    </ul>
+    
+    <h2>Detalle De Los Valores</h2>
+    <p>La propiedad (<code>box-shadow</code>) dispone de varios valores. Los cuales son:</p>
+        <pre><code>
+            div {
+                box-shadow: (offset-x) (offset-y) (blur-radius) (spread-radius) (color) (inset);
+            }
+        </code></pre>
+    <table>
+        <thead>
+            <th>Valor</th>
+            <th>¿Es Obligatoreadio?</th>
+            <th>¿Qué Hace?</th>
+        </thead>
+        <tr>
+            <td><code>offset-x</code></td>
+            <td>SI</td>
+            <td>Controla la posicion de la sombra en el eje horizontal. (valor positivo derecha, valor negativo izquierda)</td>
+        </tr>
+        <tr>
+            <td><code>offset-y</code></td>
+            <td>SI</td>
+            <td>Controla la posición de la sombra en el eje vertical. (valor positivo abajo, valor negativo arriba)</td>
+        </tr>
+        <tr>
+            <td><code>blur-radius</code></td>
+            <td>NO</td>
+            <td>Difumina el borde de la sombra. (solo valores positivos) (entre mayor sea el numero, más difuminado)</td>
+        </tr>
+        <tr>
+            <td><code>spread-radius</code></td>
+            <td>NO</td>
+            <td>Aumenta o disminuye de forma proporsional el tamaño de la sombra. (positivo más grande, negativo más pequeño)</td>
+        </tr>
+        <tr>
+            <td><code>color</code></td>
+            <td>NO</td>
+            <td>Color de la sombra. (por defecto la sombra es del mismo color que la letra del conteido)</td>
+        </tr>
+        <tr>
+            <td><code>inset</code></td>
+            <td>NO</td>
+            <td>Hace que la sombra aparezca dentro del elemento, e invierte los valores de (<code>offset-x</code>), (<code>offset-y</code>) y (<code>spread-radius</code>).</td>
+        </tr>
+    </table>
+
+    <h2>Ejemplos</h2>
+    <ol>
+        <li>
+            <p>Sombra Externa:</p>
+            <table>
+                <tr>
+                    <td>
+                        <code>box-shadow: 20px -20px</code>
+                    </td>
+                    <td>
+                        <code>box-shadow: 20px 20px</code>
+                    </td>
+                    <td>
+                        <code>box-shadow: -20px 20px</code>
+                    </td>
+                    <td>
+                        <code>box-shadow: -20px -20px</code>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="celda1">
+                        <div class="s1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste, laborum mollitia corporis ex architecto voluptatum fugit accusamus incidunt in! Omnis sed explicabo.</div>
+                    </td>
+                    <td class="celda1">
+                        <div class="s2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste, laborum mollitia corporis ex architecto voluptatum fugit accusamus incidunt in! Omnis sed explicabo.</div>
+                    </td>
+                    <td class="celda1">
+                        <div class="s3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste, laborum mollitia corporis ex architecto voluptatum fugit accusamus incidunt in! Omnis sed explicabo.</div>
+                    </td>
+                    <td class="celda1">
+                        <div class="s4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste, laborum mollitia corporis ex architecto voluptatum fugit accusamus incidunt in! Omnis sed explicabo.</div>
+                    </td>
+                </tr>
+            </table>
+        </li>
+        <li>
+            <p>Sombra Interna:</p>
+            <table>
+                <tr>
+                    <td>
+                        <code>box-shadow: 20px -20px inset</code>
+                    </td>
+                    <td>
+                        <code>box-shadow: 20px 20px inset</code>
+                    </td>
+                    <td>
+                        <code>box-shadow: -20px 20px inset</code>
+                    </td>
+                    <td>
+                        <code>box-shadow: -20px -20px inset</code>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="celda1">
+                        <div class="s5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste, laborum mollitia corporis ex architecto voluptatum fugit accusamus incidunt in! Omnis sed explicabo.</div>
+                    </td>
+                    <td class="celda1">
+                        <div class="s6">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste, laborum mollitia corporis ex architecto voluptatum fugit accusamus incidunt in! Omnis sed explicabo.</div>
+                    </td>
+                    <td class="celda1">
+                        <div class="s7">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste, laborum mollitia corporis ex architecto voluptatum fugit accusamus incidunt in! Omnis sed explicabo.</div>
+                    </td>
+                    <td class="celda1">
+                        <div class="s8">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste, laborum mollitia corporis ex architecto voluptatum fugit accusamus incidunt in! Omnis sed explicabo.</div>
+                    </td>
+                </tr>
+            </table>
+        </li>
+        <li>
+            <p>Sombra Difuminada (<code>blur-radius</code>):</p>
+            <table>
+                <tr>
+                    <td>
+                        <code>box-shadow: 20px -20px 30px;</code>
+                    </td>
+                    <td>
+                        <code>box-shadow: 20px -20px 30px inset;</code>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="celda1">
+                        <div class="s9">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste, laborum mollitia corporis ex architecto voluptatum fugit accusamus incidunt in! Omnis sed explicabo.</div>
+                    </td>
+                    <td class="celda1">
+                        <div class="s10">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste, laborum mollitia corporis ex architecto voluptatum fugit accusamus incidunt in! Omnis sed explicabo.</div>
+                    </td>
+                </tr>
+            </table>
+        </li>
+        <li>
+            <p>Tamaño De La Sombra (<code>spread-radius</code>):</p>
+            <table>
+                <tr>
+                    <td>
+                        <code>box-shadow: 0px 0px 0px 20px;</code>
+                    </td>
+                    <td>
+                        <code>box-shadow: 0px 40px 0px -20px;</code>
+                    </td>
+                    <td>
+                        <code>box-shadow: 0px 0px 0px 20px inset;</code>
+                    </td>
+                    <td>
+                        <code>box-shadow: -30px -30px 0px -20px inset;</code>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="celda1">
+                        <div class="s11">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste, laborum mollitia corporis ex architecto voluptatum fugit accusamus incidunt in! Omnis sed explicabo.</div>
+                    </td>
+                    <td class="celda1">
+                        <div class="s12">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste, laborum mollitia corporis ex architecto voluptatum fugit accusamus incidunt in! Omnis sed explicabo.</div>
+                    </td>
+                    <td class="celda1">
+                        <div class="s13">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste, laborum mollitia corporis ex architecto voluptatum fugit accusamus incidunt in! Omnis sed explicabo.</div>
+                    </td>
+                    <td class="celda1">
+                        <div class="s14">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste, laborum mollitia corporis ex architecto voluptatum fugit accusamus incidunt in! Omnis sed explicabo.</div>
+                    </td>
+                </tr>
+            </table>
+        </li>
+        <li>
+            <p>Color De La Sombra:</p>
+            <table>
+                <tr>
+                    <td>
+                        <code>box-shadow: 0px 0px 30px 20px lightseagreen;</code>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="celda1">
+                        <div class="s15">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste, laborum mollitia corporis ex architecto voluptatum fugit accusamus incidunt in! Omnis sed explicabo.</div>
+                    </td>
+                </tr>
+            </table>
+        </li>
+        <li>
+            <p>Más De Una Sombra:</p>
+            <table>
+                <tr>
+                    <td>
+                        <pre><code>
+box-shadow: 
+    0px 0px 0px 10px lightseagreen,
+    0px 0px 0px 20px purple, 
+    0px 0px 0px 30px lightblue;
+                        </code></pre>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="celda1">
+                        <div class="s16">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste, laborum mollitia corporis ex architecto voluptatum fugit accusamus incidunt in! Omnis sed explicabo.</div>
+                    </td>
+                </tr>
+            </table>
+        </li>
+    </ol>
+</body>
+</html>

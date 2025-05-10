@@ -1,0 +1,94 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+table, td , th {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+.celda1 {
+    width: 300px;
+    height: 300px
+}
+
+.s1, .s2, .s3, .s4, .s5, .s6, .s7, .s8, .s9, .s10, .s11, .s12, .s13, .s14, .s15, .s16 {
+    background-color: orange;
+    width: 200px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 25px;
+    border: 1px solid black;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.s1 {
+    box-shadow: 20px -20px;
+}
+
+.s2 {
+    box-shadow: 20px 20px;
+}
+
+.s3 {
+    box-shadow: -20px 20px;
+}
+
+.s4 {
+    box-shadow: -20px -20px;
+}
+
+.s5 {
+    box-shadow: 20px -20px inset;
+}
+
+.s6 {
+    box-shadow: 20px 20px inset;
+}
+
+.s7 {
+    box-shadow: -20px 20px inset;
+}
+
+.s8 {
+    box-shadow: -20px -20px inset;
+}
+
+.s9 {
+    box-shadow: 20px -20px 30px;
+}
+
+.s10 {
+    box-shadow: 20px -20px 30px inset;
+}
+
+.s11 {
+    box-shadow: 0px 0px 0px 20px;
+}
+
+.s12 {
+    box-shadow: 0px 40px 0px -20px;
+}
+
+.s13 {
+    box-shadow: 0px 0px 0px 20px inset;
+}
+
+.s14 {
+    box-shadow: -30px -30px 0px -20px inset;
+}
+
+.s15 {
+    box-shadow: 0px 0px 30px 20px lightseagreen;
+}
+
+.s16 {
+    box-shadow: 
+        0px 0px 0px 10px lightseagreen,
+        0px 0px 0px 20px purple, 
+        0px 0px 0px 30px lightblue;
+}
