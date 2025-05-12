@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+table, td, th {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.tabla {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+.celda {
+    width: 330px;
+    height: 330px;
+}
+
+.bloque {
+    background-color: #333;
+    width: 300px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+
+.bloque1, .bloque3, .bloque5, .bloque7, .bloque9, .bloque11 {
+    background-color: lightsalmon;
+    margin-top: 95px;
+}
+
+.bloque2, .bloque4, .bloque6, .bloque8, .bloque10, .bloque12 {
+    background-color: lightseagreen;
+    margin-top: 10px;
+}
+
+.bloque1, .bloque2, .bloque3, .bloque4, .bloque5, .bloque6, .bloque7, .bloque8, .bloque9, .bloque10, .bloque11, .bloque12{
+    width: 50px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.bloque1 {
+    top: 60px;
+}
+
+.bloque2 {
+    bottom: 60px;
+}
+
+.bloque3 {
+    left: 60px;
+}
+
+.bloque4 {
+    right: 60px;
+}
+
+.bloque5 {
+    top: -60px;
+}
+
+.bloque6 {
+    bottom: -60px;
+}
+
+.bloque7 {
+    left: -60px;
+}
+
+.bloque8 {
+    right: -60px;
+}
+
+.bloque11 {
+    width: 70px;
+    height: 70px;
+    top: 40px;
+}
+
+.bloque12 {
+    bottom: 30px;
+}
+
+pre {
+    margin-left: 10px;
+}

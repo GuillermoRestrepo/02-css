@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="02-position-relative.css">
+    <title>position: relative;</title>
+</head>
+<body>
+    <h1><code>position: relative;</code></h1>
+    <ul>
+        <li>Mantiene su flujo de renderizado.</li>
+        <li>No pierde su espacio reservado.</li>
+        <li>Permite el uso de <code>top</code>, <code>left</code>, etc.</li>
+        <li>Al utilizar las propiedades <code>top</code>, <code>left</code>, etc, se mueven los elementos a partir de su posicion original.</li>
+    </ul>
+    
+    <h2>Ejemplos:</h2>
+
+    <table class="tabla">
+        <tr>
+            <td>
+                <p>Original</p>
+                <pre><code>
+.bloque9 {
+    background-color: lightsalmon;
+    margin-top: 95px;
+}
+
+.bloque10{
+    background-color: lightseagreen;
+    margin-top: 10px;
+}
+
+.bloque9, .bloque10{
+    width: 50px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+                </code></pre>
+            </td>
+            <td>
+                <pre><code>
+.bloque11, .bloque12 {
+    position: relative;
+}
+
+.bloque11 {
+    width: 70px;
+    height: 70px;
+    left: 40px;
+}
+
+.bloque12 {
+    right: 30px;
+}
+                </code></pre>
+            </td>
+        </tr>
+        <tr>
+            <td class="celda">
+                <div class="bloque">
+                    <div class="bloque9"></div>
+                    <div class="bloque10"></div>
+                </div>
+            </td>
+            <td class="celda">
+                <div class="bloque">
+                    <div class="bloque11"></div>
+                    <div class="bloque12"></div>
+                </div>
+            </td>
+        </tr>
+    </table>
+
+    <table class="tabla">
+        <tr>
+            <td>
+                <pre><code>
+.bloque1, .bloque2 {
+    position: relative;
+}
+
+.bloque1 {
+    top: 60px;
+}
+
+.bloque2 {
+    bottom: 60px;
+}
+                </code></pre>
+            </td>
+            <td>
+                <pre><code>
+.bloque3, .bloque4 {
+    position: relative;
+}
+
+.bloque3 {
+    left: 60px;
+}
+
+.bloque4 {
+    right: 60px;
+}
+                </code></pre>
+            </td>
+            <td>
+                <pre><code>
+.bloque5, .bloqu6 {
+    position: relative;
+}
+
+.bloque5 {
+    top: -60px;
+}
+
+.bloque6 {
+    bottom: -60px;
+}
+                </code></pre>
+            </td>
+            <td>
+                <pre><code>
+.bloque7, .bloque8 {
+    position: relative;
+}
+
+.bloque7 {
+    left: -60px;
+}
+
+.bloque8 {
+    right: -60px;
+}
+                </code></pre>
+            </td>
+        </tr>
+        <tr>
+            <td class="celda">
+                <div class="bloque">
+                    <div class="bloque1"></div>
+                    <div class="bloque2"></div>
+                </div>
+            </td>
+            <td class="celda">
+                <div class="bloque">
+                    <div class="bloque3"></div>
+                    <div class="bloque4"></div>
+                </div>
+            </td>
+            <td class="celda">
+                <div class="bloque">
+                    <div class="bloque5"></div>
+                    <div class="bloque6"></div>
+                </div>
+            </td>
+            <td class="celda">
+                <div class="bloque">
+                    <div class="bloque7"></div>
+                    <div class="bloque8"></div>
+                </div>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
