@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0pc;
+    padding: 0px;
+}
+
+table, td, th {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.tabla {
+    margin: 20px
+}
+
+.tabla2 {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+pre {
+    margin: 10px;
+    padding: 0px;
+}
+
+.celda {
+    width: 320px;
+    height: 320px;
+}
+
+.container {
+    background-color: #333;
+    width: 300px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.container2, .container3 {
+    width: 120px;
+    height: 120px;
+    background-color: #666;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+}
+
+.container2 {
+    position: relative;
+}
+
+.b1, .b3, .b5, .b7, .b9 {
+    background-color: lightsalmon;
+}
+
+.b2, .b4, .b6, .b8, .b10 {
+    background-color: lightseagreen;
+}
+
+.b1, .b2, .b3, .b4, .b5, .b6, .b7, .b8, .b9, .b10 {
+    width: 30px;
+    height: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.b3, .b4, .b5, .b6, .b7, .b8, .b9, .b10 {
+    position: absolute;
+}
+
+.b3, .b4 {
+    top: 20px;
+    left: 20px;
+}
+
+.b5, .b6 {
+    top: 20px;
+    right: 20px;
+}
+
+.b7, .b8 {
+    bottom: 20px;
+    right: 20px;
+}
+
+.b9, .b10 {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+.l1, .l2 {
+    background-color:lightgoldenrodyellow;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+}
+
+.l2 {
+    position: absolute;
+}

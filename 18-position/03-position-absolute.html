@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="03-position-absolute.css">
+    <title>position: absolute;</title>
+</head>
+<body>
+    <h1><code>position: absolute;</code></h1>
+    <ul>
+        <li>Pierde su flujo de renderizado.</li>
+        <li>Pierde su espacio reservado.</li>
+        <li>Permite el uso de <code>top</code>, <code>left</code>, etc.</li>
+        <li>Al utilizar las propiedades <code>top</code>, <code>left</code>, etc, los elementos se moveran tomando como referencia los bordes de su contenedor.</li>
+        <li>Los elementos posicionados con (<code>absolute</code>), toman como contenedor al primer elemento antecesor que se encuentre posicionado con (<code>relative</code>, <code>absolute</code> o <code>fixed</code>).</li>
+        <li>En caso de q ningun elemento antecesor se encuentre posicionado, este tomará como contenedor referente el elemento html, es decir (toda la pantalla dibujable).</li>
+    </ul>
+
+    <h2>Ejemplos:</h2>
+    <ul>
+        <li>El bloque gris oscuro representa el viwport del navegador (toda la pantalla dibujable).</li>
+        <li>El primer contenedor gris claro, se encuentra posicionado con (<code>possition: relative;</code>).</li>
+        <li>El segundo contenedor gris claro, no se encuentra posicionado, lo q es igual a (<code>position static</code>).</li>
+        <li>El bloque 1 y 2 de color salmon y turquesa respectivamente, se encuentran centrados y sin posicinarse. </li>
+    </ul>
+    <table class="tabla">
+        <tr>
+            <td>Código:</td>
+            <td>Como Se Muestra:</td>
+        </tr>
+        <tr>
+            <td class="celda">
+                <pre><code>
+.container {
+    background-color: #333;
+    width: 300px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.container2, .container3 {
+    width: 120px;
+    height: 120px;
+    background-color: #666;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+}
+
+.container2 {
+    position: relative;
+}
+
+.b1 {
+    background-color: lightsalmon;
+}
+
+.b2 {
+    background-color: lightseagreen;
+}
+
+.b1, .b2 {
+    width: 30px;
+    height: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+                </code></pre>
+            </td>
+
+            <td class="celda">
+                <div class="container">
+                    <div class="container2">
+                        <div class="b1"></div>
+                    </div>
+                    <div class="container3">
+                        <div class="b2"></div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+
+    <h2>Así Se Ve El Efecto De (<code>position: absolute;</code>)</h2>
+    <table class="tabla2">
+        <tr>
+            <td>
+                <pre><code>
+.b1, .b2 {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+                </code></pre>
+            </td>
+
+            <td>
+                <pre><code>
+.b1, .b2 {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+                </code></pre>
+            </td>
+
+            <td>
+                <pre><code>
+.b1, .b2 {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+                </code></pre>
+            </td>
+
+            <td>
+                <pre><code>
+.b1, .b2 {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+                </code></pre>
+            </td>
+        </tr>
+
+
+        <tr>
+            <td class="celda">
+                <div class="container">
+                    <div class="container2">
+                        <div class="b3"></div>
+                    </div>
+                    <div class="container3">
+                        <div class="b4"></div>
+                    </div>
+                </div>
+            </td>
+
+            <td class="celda">
+                <div class="container">
+                    <div class="container2">
+                        <div class="b5"></div>
+                    </div>
+                    <div class="container3">
+                        <div class="b6"></div>
+                    </div>
+                </div>
+            </td>
+
+            <td class="celda">
+                <div class="container">
+                    <div class="container2">
+                        <div class="b7"></div>
+                    </div>
+                    <div class="container3">
+                        <div class="b8"></div>
+                    </div>
+                </div>
+            </td>
+
+            <td class="celda">
+                <div class="container">
+                    <div class="container2">
+                        <div class="b9"></div>
+                    </div>
+                    <div class="container3">
+                        <div class="b10"></div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <h2>Elemento De Línea Con (position: absolute;)</h2>
+    <p>Hace q un elemento de línea se comporte como un elemento de bloque.</p>
+    <table>
+        <tr>
+            <td>
+                <p>SIN (<code>position: absolute;</code>)</p>
+                <pre><code>
+.l1 {
+    width: 100px;
+    height: 30px;
+    text-align: center;
+}
+                </code></pre>
+            </td>
+            <td>
+                <p>CON (<code>position: absolute;</code>)</p>
+                <pre><code>
+.l2 {
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+}
+                </code></pre>
+            </td>
+        </tr>
+        <tr>
+            <td class="celda">
+                <div class="container">
+                    <a href="#" class="l1">Enlace</a>
+                </div>
+            </td>
+            <td class="celda">
+                <div class="container">
+                    <a href="#" class="l2">Enlace</a>
+                </div>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
