@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="04-position-fixed.css">
+    <title>position: fixed;</title>
+</head>
+<body>
+    <header class="encabezado">
+        MENÚ DE NAVEGACIÓN
+    </header>
+    <main class="principal">
+        <h1><code>position: fixed;</code></h1>
+        <ul>
+            <li>Pierde su espacio reservado.</li>
+            <li>Permite el uso de (<code>top</code>), (<code>right</code>), etc.</li>
+            <li>Los elementos posicionados con (<code>fixed</code>), toman como referencia el viewport del navegador (es espacio pintable), y se mantiene de forma flotante por mas q se scrolee.</li>
+            <li>Los valores de (<code>top</code>), (<code>top</code>), etc, se calculan a partir de los bordes del contenedor del elemento, es decir, del vewport.</li>
+        </ul>
+        
+        <h2>Ejemplo</h2>
+        <p>Los ejemplos son la barra de navegacion y los cuadrados en la esquina q aparecen que no se moveran cuando se hace scroll.</p>
+        <h3>Código</h3>
+        <ul>
+            <li>
+                <p><em>Código de "Menú De Navegación"</em></p>
+                <pre><code>
+.encabezado {
+    background-color: #333;
+    color: #fff;
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    position: fixed;
+    text-align: center;
+}
+                </code></pre>
+            </li>
+
+            <li>
+                <p><em>Código de "Menú De Cuadrados"</em></p>
+                <pre><code>
+.cuadrado1, .cuadrado2 {
+    width: 200px;
+    height: 200px;
+    position: fixed;
+}
+
+.cuadrado1 {
+    background-color: lightsalmon;
+    bottom: 20px;
+    left: 20px;
+}
+
+.cuadrado2 {
+    background-color: lightseagreen;
+    bottom: 20px;
+    right: 20px;
+}
+                </code></pre>
+            </li>
+        </ul>
+
+        <h2>Elemento De Línea Usando (<code>position: fixed;</code>)</h2>
+        <p>Admite medidas como cuando se lo usa con (<code>position: absolute;</code>) solo q ahora no se desplaza y queda referemte al viewport.</p>
+        
+        <h2>Texto De Relleno Para Poder Hacer Scroll.</h2>
+        <div class="relleno">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam dolorum delectus cumque. Alias soluta necessitatibus repudiandae velit at voluptates corporis culpa et numquam, deleniti asperiores officia nemo doloremque obcaecati odio.</p>
+        
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore vitae esse eligendi ab, quisquam sapiente explicabo fuga nostrum ex! Est, eligendi minus! Nihil alias tempore eius placeat quidem, odit voluptatibus.</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa deserunt praesentium molestias iusto exercitationem a ducimus provident, sunt tenetur impedit corporis eveniet, aperiam officiis eum possimus sequi quaerat ratione. Voluptates!</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint dolores commodi cupiditate odit repellendus quo magnam, veritatis, deserunt mollitia soluta iure officiis ex aliquid ad corporis exercitationem laudantium rem delectus!</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam amet reprehenderit voluptas, quis a excepturi blanditiis ducimus corporis, expedita magnam nemo repellat suscipit porro sed dolore dolor sint obcaecati omnis?</p>
+        </div>
+    </main>
+    <div class="cuadrado1"></div>
+    <div class="cuadrado2"></div>
+</body>
+</html>
