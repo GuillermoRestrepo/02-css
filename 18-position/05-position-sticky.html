@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="05-position-sticky.css">
+    <title>position: sticky;</title>
+</head>
+<body>
+    <h1><code>position: sticky;</code></h1>
+    <ul>
+        <li>Funciona como (<code>position: fixed</code>), pero dentro de un contenedor especifico.</li>
+        <li>Las propiedades (<code>top</code>), (<code>right</code>), indica q tan cerca tiene q estar el borde del contenedor q se indica, para que este se desplace o se detenga.</li>
+        <li><strong>NOTA:</strong> el contenedor del elemento posicionado, tiene que tener el valor (<code>visible</code>) en la propiedad (<code>overflow</code>), es el valor por defecto, en tal caso no usar dicha propiedad.</li>
+    </ul>
+    <h2>Ejemplos:</h2>
+    <table class="tabla">
+        <tr>
+            <td colspan="2">Como el "menú de navegación" se encuenta contenido en el "body", su desplazamiento comprende todo el "viewport"</td>
+            <td colspan="2">Como los titulos de los articulos se encuentran contenidos en los articulos, el desplazamiento de los titulos solo comprende el articulo q le corresponde.</td>
+        </tr>
+        <tr>
+            <td>
+                <pre><code>
+.body {
+    background-color: #333;
+    color: #fff;
+    width: 300px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+    overflow: auto;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 10px;
+}
+
+.header {
+    background-color: lightseagreen;
+    text-align: center;
+    width: 100%;
+    height: 30px;
+    padding-top: 7px;
+    position: sticky;
+    top: 0px;
+}
+                </code></pre>
+            </td>
+            <td class="celda">
+                <div class="body">
+                    <img src="../image/01-shenlong.webp" alt="imágen de Shenlong">
+                    <div class="header">MENÚ DE NAVEGACIÓN</div>
+                    <div class="main">
+                        <h3>Texto De Relleno</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error reprehenderit fugiat nulla sint excepturi, ratione, quod libero iusto iste aspernatur dolores! Odio, laudantium assumenda? Expedita provident libero soluta iste qui.</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum perferendis atque repudiandae molestiae dolorum itaque et quas quisquam vero culpa delectus voluptate reprehenderit nisi odio dolorem ipsa, facere hic ullam!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit inventore, voluptas quae autem, amet molestias eum aut fuga dolores quas voluptates nesciunt repellat similique dolorum illum fugit ipsam temporibus eligendi.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde nihil inventore fugit quas facilis quod modi iste voluptatem placeat dolores officia sint odio libero, culpa consectetur, aliquid dolore nemo nam.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam ullam rerum dolores in tempora, pariatur reprehenderit iure officiis dolorem enim natus esse quasi! Mollitia, corrupti eum dignissimos temporibus sunt consectetur!</p>
+                    </div>
+                </div>
+            </td>
+            
+            <td>
+                <pre><code>
+.body {
+    background-color: #333;
+    color: #fff;
+    width: 300px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+    overflow: auto;
+}
+
+.main, .main2 {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 10px;
+}
+.article {
+    border: 1px solid #666;
+    margin-bottom: 10px;
+}
+
+.titulo {
+    background-color: #666;
+    width: 100%;
+    height: 30px;    
+    margin: 0px;
+    padding-top: 5px;
+    position: sticky;
+    top: 0px;
+}
+
+.parrafo {
+    margin: 5px 5px 10px 5px;
+}
+                </code></pre>
+            </td>
+            <td class="celda">
+                <div class="body">
+                    <div class="main2">
+                        <article class="article">
+                            <h3 class="titulo">Artículo #1</h3>
+                            <p class="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde nihil inventore fugit quas facilis quod modi iste voluptatem placeat dolores officia sint odio libero, culpa consectetur, aliquid dolore nemo nam.</p>
+                            <p class="parrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam ullam rerum dolores in tempora, pariatur reprehenderit iure officiis dolorem enim natus esse quasi! Mollitia, corrupti eum dignissimos temporibus sunt consectetur!</p>
+                            <p class="parrafo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis iste esse dignissimos doloribus porro quasi facilis tenetur architecto harum nihil aliquid sunt perspiciatis laudantium, voluptatem, ipsum voluptate ratione excepturi cupiditate.</p>
+                        </article>
+                        <article class="article">
+                            <h3 class="titulo">Artículo #2</h3>
+                            <p class="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde nihil inventore fugit quas facilis quod modi iste voluptatem placeat dolores officia sint odio libero, culpa consectetur, aliquid dolore nemo nam.</p>
+                            <p class="parrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam ullam rerum dolores in tempora, pariatur reprehenderit iure officiis dolorem enim natus esse quasi! Mollitia, corrupti eum dignissimos temporibus sunt consectetur!</p>
+                            <p class="parrafo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis iste esse dignissimos doloribus porro quasi facilis tenetur architecto harum nihil aliquid sunt perspiciatis laudantium, voluptatem, ipsum voluptate ratione excepturi cupiditate.</p>
+                        </article>
+                        <article class="article">
+                            <h3 class="titulo">Artículo #3</h3>
+                            <p class="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde nihil inventore fugit quas facilis quod modi iste voluptatem placeat dolores officia sint odio libero, culpa consectetur, aliquid dolore nemo nam.</p>
+                            <p class="parrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam ullam rerum dolores in tempora, pariatur reprehenderit iure officiis dolorem enim natus esse quasi! Mollitia, corrupti eum dignissimos temporibus sunt consectetur!</p>
+                            <p class="parrafo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis iste esse dignissimos doloribus porro quasi facilis tenetur architecto harum nihil aliquid sunt perspiciatis laudantium, voluptatem, ipsum voluptate ratione excepturi cupiditate.</p>
+                        </article>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
