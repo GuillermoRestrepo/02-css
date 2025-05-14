@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contexto De Posicionamiento</title>
+</head>
+<body>
+    <h1>CONTEXTO DE POSICIONAMIENTO</h1>
+    <p>Se refiere a como actua la propiedad (<code>z-index</code>), en diferentes contextos, contexto los cuales están definidos por las propiedades que usa un elemento, o por el contenedor en el q se encuentra.</p>
+
+    <h2>Ejemplo rápido</h2>
+    <p><em>Código en HTML:</em></p>
+    <pre><code>
+&lt;body&gt;
+    &lt;div class="contenedor-1"&gt;
+        &lt;div class="caja-1"&gt; &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="contenedor-2"&gt; &lt;/div&gt;
+&lt;/body&gt;
+    </code></pre>
+    <p><em>Código en CSS:</em></p>
+    <pre><code>
+.contenedor-1, .contenedor-2, .caja-1 {
+    position: relative;
+}
+
+.contenedor-1 {
+    z-index: 1;
+}
+
+.contenedor-2 {
+    z-index: 2;
+}
+
+.caja-1 {
+    z-index: 99999;
+}
+    </code></pre>
+    <p>No importa que tan grande sea el valor de la propiedad (<code>z-index</code>) del elemento (<code>caja-1</code>) jamas podra posicionar su contenido por delante del conteido del elemento (<code>contenedor-2</code>) porq son contextos diferentes en los q se aplica dicha propiedad.</p>
+
+    <h2>Otras Propiedades Que Pueden Crear Diferentes Contextos De Apilamiento</h2>
+    <ul>
+        <li>opacity menor que 1</li>
+        <li>transform (como transform: scale(1))</li>
+        <li>filter</li>
+        <li>perspective</li>
+        <li>mix-blend-mode distinto de normal</li>
+        <li>will-change con ciertos valores</li>
+        <li>contain: layout, paint, etc.</li>
+    </ul>
+
+    <h2>NOTA IMPORTANTE</h2>
+    <p>Hay q tener muy en cuenta cada contexto de apilamiento que se crea, esto evitará conflictos al querer posicionar un elemento delante de otro.</p>
+</body>
+</html>
