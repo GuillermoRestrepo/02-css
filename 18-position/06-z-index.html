@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="06-z-index.css">
+    <title>z-index</title>
+</head>
+<body>
+    <h1>PROPIEDAD (<code>z-index</code>)</h1>
+    <ul>
+        <li>Sirve para indicar que elemento se mostrará delante de otro sobreponiendose a este.</li>
+        <li>Solo funciona en elementos que se encuentren posicionados.</li>
+        <li>El valor más alto, será el que se posicone al frente.</li>
+        <li>Es importante dejar una diferencia considerable entre el valor (<code>z-index</code>) de un elemento y de otro.</li>
+        <li>Este espacio puede ir de 10 en 10 o preferible de 100 en 100.</li>
+        <li>Esto se hace para no tener la necesidad de cambiar cada valor de (<code>z-index</code>), en caso de que posteriormente, se necesite añadir otro elemento.</li>
+        <li>Si se coloca un valor negativo, el elemento se posicionará por detras de los elementos no posicionados, e incluso detras de su contenedor.</li>
+    </ul>
+    <h2>Ejemplos</h2>
+    <table class="tabla">
+        <tr>
+            <td>
+                Box-1 y Box-2 no se encuentran posicionados, pero Box-2 tiene un (<code>margin-top: -20px;</code>) haciendo que ocupe el espacio de Box-1 y sobreponiendose a este, ya que, con elementos no posicionados, siempre se sobrepone el último elemento colocado en el HTML, en este caso Box-2.
+            </td>
+            <td>
+                Box-3 se encuentra posicionado, pero Box-4 no, esto quiere decir que un eleento posicionado se sobrepone a un elemento sin posicionar.
+            </td>
+            <td>
+                Box-5 y Box-6 están posicionados, nuevamente se posicionará por delante el último elemento colocado en el html, en este caso Box-6.
+            </td>
+            <td>
+                Box-7 y Box-8 están posicionados, pero Box-7 tiene la propiedad (<code>z-index</code>) con el valor de 1, esto significa que este se sobrepondra a Box-4.
+            </td>
+            <td>
+                Box-9 y Box-10 están posicionados, pero Box-9 tiene la propiedad (<code>z-index</code>) con el valor de 1 y Box-10 tiene con el valor de 2, demostrando q entre mayor sea el valor de esta propiedad, mayor prioridad se tendra para mostrarse por delante.
+            </td>
+
+        </tr>
+        <tr>
+            <td class="celda">
+                <div class="body">
+                    <div class="box-1">Box-1</div>
+                    <div class="box-2">Box-2</div>
+                </div>
+            </td>
+            <td class="celda">
+                <div class="body">
+                    <div class="box-3">Box-3</div>
+                    <div class="box-4">Box-4</div>
+                </div>
+            </td>
+            <td class="celda">
+                <div class="body">
+                    <div class="box-5">Box-5</div>
+                    <div class="box-6">Box-6</div>
+                </div>
+            </td>
+            <td class="celda">
+                <div class="body">
+                    <div class="box-7">Box-7</div>
+                    <div class="box-8">Box-8</div>
+                </div>
+            </td>
+            <td class="celda">
+                <div class="body">
+                    <div class="box-9">Box-9</div>
+                    <div class="box-10">Box-10</div>
+                </div>
+            </td>
+        </tr>
+    </table>
+
+    <h2>Ejemplo Con Elementos Padre E Hijo</h2>
+    <table class="tabla">
+        <tr>
+            <td>Como se ve normalmente, siendo Caja-1 y Caja-2 elementos hermanos que a su vez son elementos hijos del contenedor.</td>
+            <td>El contenedor y las cajas estan posicionados, para hacer que las cajas se desborde el elemento padre no tiene la propiedad (<code>overflow</code>) o si la tiene que la tenga con el valor (<code>visible</code>).</td>
+            <td>Caja-5 y Caja-6 tiene un valor de (-1), en la propiedad (<code>z-index</code>), es por eso que se colocan detras del elemento padre, para q esto funcione, el elemento padre no debe de tener la propiedad (<code>z-index</code>) o tenerla con el valor de (auto) que es el valor por defecto.</td>
+            <td>Caja-7 tiene un valor de (-1) y Caja-8 tiene un valor de (-2), por eso Caja-7 se sobrepone a Caja-8, pero ambas siguen estando detras del elemento padre.</td>
+            <td>Por último Caja-9 valor (-3) Caja-10 valor (-2) posicionando Caja-10 encima de Caja-9 y ambas detras del elemento padre.</td>
+        </tr>
+        <tr>
+            <td class="celda">
+                <div class="body-2">
+                    <div class="container">
+                        <div class="caja-1">Caja-1</div>
+                        <div class="caja-2">Caja-2</div>
+                    </div>
+                </div>
+            </td>
+            <td class="celda">
+                <div class="body-2">
+                    <div class="container">
+                        <div class="caja-3">Caja-3</div>
+                        <div class="caja-4">Caja-4</div>
+                    </div>
+                </div>
+            </td>
+            <td class="celda">
+                <div class="body-2">
+                    <div class="container">
+                        <div class="caja-5">Caja-5</div>
+                        <div class="caja-6">Caja-6</div>
+                    </div>
+                </div>
+            </td>
+            <td class="celda">
+                <div class="body-2">
+                    <div class="container">
+                        <div class="caja-7">Caja-7</div>
+                        <div class="caja-8">Caja-8</div>
+                    </div>
+                </div>
+            </td>
+            <td class="celda">
+                <div class="body-2">
+                    <div class="container">
+                        <div class="caja-9">Caja-9</div>
+                        <div class="caja-10">Caja-10</div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

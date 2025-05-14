@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.celda {
+    width: 270px;
+    height: 270px;
+    padding: 0px;
+}
+
+.body, .body-2 {
+    background-color: #333;
+    width: 250px;
+    height: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;   
+}
+
+.box-1, .box-3, .box-5, .box-7, .box-9, .caja-1, .caja-3, .caja-5, .caja-7, .caja-9 {
+    background-color: lightsalmon;
+}
+
+.box-2, .box-4, .box-6, .box-8, .box-10, .caja-2, .caja-4, .caja-6, .caja-8, .caja-10 {
+    background-color: lightseagreen;
+}
+
+.box-1, .box-2, .box-3, .box-4, .box-5, .box-6, .box-7, .box-8, .box-9, .box-10 {
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    align-content: center;
+}
+
+.box-3, .box-5, .box-6, .box-7, .box-8, .box-9, .box-10 {
+    position: relative;
+}
+
+.box-2 {
+    margin-top:-20px;
+}
+
+.box-3, .box-5, .box-7, .box-9{   
+    top: 20px;
+}
+
+.box-7, .box-9{
+    z-index: 1;
+}
+
+.box-10 {
+    z-index: 2;
+}
+
+.body-2 {
+    align-content: center;
+    position: relative;
+    z-index: -5;
+}
+.container {
+    background-color: #666;
+    width: 150px;
+    height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+    border-top: 1px solid #333;
+    position: relative;
+}
+
+.caja-1, .caja-2, .caja-3, .caja-4, .caja-5, .caja-6 , .caja-7, .caja-8, .caja-9, .caja-10 {
+    width: 60px;
+    height: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    align-content: center;
+    position: relative;
+}
+
+.caja-3, .caja-4, .caja-5, .caja-6 , .caja-7, .caja-8, .caja-9, .caja-10 {
+    left: 80px;
+}
+
+.caja-5 {
+    z-index: -1;
+}
+
+.caja-6 {
+    z-index: -1;
+}
+
+
+.caja-7 {
+    top: 15px;
+    z-index: -1;
+}
+
+.caja-8 {
+    bottom: 15px;
+    z-index: -2;
+}
+
+.caja-9 {
+    top: 15px;
+    z-index: -3;
+}
+
+.caja-10 {
+    bottom: 15px;
+    z-index: -2;
+}
