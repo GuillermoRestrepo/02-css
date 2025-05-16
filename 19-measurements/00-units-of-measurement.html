@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="00-units-of-measurement.css">
+    <title>Unidades De Medida</title>
+</head>
+<body>
+    <h1>UNIDADES DE MEDIDA</h1>
+    <p>Las unidades de medida en CSS se usan para definir longitudes: ancho (width), alto (height), márgenes, paddings, fuentes, entre otras.</p>
+    <p>Estas se dividen en dos grandes categorías:</p>
+
+    <h2>Medidas Absolutas</h2>
+    <p>Sirven para indicar medidas fijas, que no cambiarán al momento de ser visualizadas en diferentes dispositivo o pantallas de diferente tamaño.</p>
+    <table>
+        <thead>
+            <th>Unidad</th>
+            <th>Descripción</th>
+            <th>Equivalencia Aproximada</th>
+        </thead>
+
+        <tr>
+            <td>px</td>
+            <td>Píxeles (unidad más usada)</td>
+            <td>1px = 1 punto en pantalla</td>
+        </tr>
+
+        <tr>
+            <td>cm</td>
+            <td>Centímetros</td>
+            <td>1cm = 37.8px</td>
+        </tr>
+
+        <tr>
+            <td>mm</td>
+            <td>Milímetros</td>
+            <td>1mm = 3.78px</td>
+        </tr>
+
+        <tr>
+            <td>Q</td>
+            <td>Cuarto de milimetro</td>
+            <td>1Q = 1/40 de 1cm</td>
+        </tr>
+
+        <tr>
+            <td>in</td>
+            <td>Pulgadas</td>
+            <td>1in = 2.54cm = 96px</td>
+        </tr>
+
+        <tr>
+            <td>pt</td>
+            <td>Puntos tipográficos</td>
+            <td>1pt = 1/72in ≈ 1.33px</td>
+        </tr>
+
+        <tr>
+            <td>pc</td>
+            <td>Picas</td>
+            <td>1pc = 12pt ≈ 16px</td>
+        </tr>
+    </table>
+    <p><strong>NOTA:</strong> al utilizar medidas absolutas, NO es aconseble el uso de otras unidades que no sean píxeles (px), ya que, no se adaptan correctamente a diseños resposivos.<p>
+
+    <h2>Medidas Relativas</h2>
+    <p>Sirven para indicar medidas que se adaptan al tamaño del elemento que las contiene, excelentes para responsividad.</p>
+    <table>
+        <thead>
+            <th>Unidad</th>
+            <th>Relativa a…</th>
+        </thead>
+        <tr>
+            <td>%</td>
+            <td>El contenedor padre</td>
+        </tr>
+
+        <tr>
+            <td>em</td>
+            <td>El tamaño de fuente del elemento actual</td>
+        </tr>
+
+        <tr>
+            <td>rem</td>
+            <td>El tamaño de fuente raíz (html)</td>
+        </tr>
+
+        <tr>
+            <td>vw</td>
+            <td>1% del ancho del viewport</td>
+        </tr>
+
+        <tr>
+            <td>vh</td>
+            <td>1% del alto del viewport</td>
+        </tr>
+
+        <tr>
+            <td>vmin</td>
+            <td>1% del valor menor entre vw y vh</td>
+        </tr>
+
+        <tr>
+            <td>vmax</td>
+            <td>1% del valor mayor entre vw y vh</td>
+        </tr>
+
+        <tr>
+            <td>ch</td>
+            <td>Ancho del carácter 0 del font actual</td>
+        </tr>
+
+        <tr>
+            <td>lh</td>
+            <td>Altura de una línea del elemento</td>
+        </tr>
+        
+        <tr>
+            <td>ex</td>
+            <td>Altura de la x minúscula (menos común)</td>
+        </tr>
+    </table>
+    <p>Las medidas relativas mas útilizadas son: %, em, rem, vw, vh, vmin y vmax.</p>
+</body>
+</html>
