@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="03-percent-auto-height.css">
+    <title>% and auto</title>
+</head>
+<body>
+    <h2><code>height: %;</code></h2>
+    <p>Hace que el elemento ocupe un porcentaje del tamaño del elemento q lo contiene.</p>
+
+    <h2><code>height: auto;</code></h2>
+    <p>Hace que el elemento ocupe el tamaño de su contenido.</p>
+
+    <h2>NOTAS</h2>
+    <ul>
+        <li>
+            <p>Utilizar (%) solo funciona si el elemento contenedor tiene un tamaño definido.</p>
+        </li>
+        <li>
+            <p>Si el tamaño del elemento contenedor no está definido, cuaquier medida porcentual que se le de al elemento hijo, será tomada como (<code>auto</code>).</p>
+        </li>
+        <li>
+            <p>En la mayoria de ocaciones no es necesario ocupar la proiedad (<code>height</code>) ya q por defecto su valor es (<code>auto</code>) y ocupará el espacio que requiera su contenido.</p>
+        </li>
+        <li>
+            <p>En caso de que se desee espacios más allá del que ocupa el contenido, es preferible utilizar la propiedad (<code>padding</code>).</p>
+        </li>
+        <li>
+            <p><strong>IMPORTANTE:</strong> Al utilizar (<code>position: absolute;</code>) en el elemento hijo, el porcentaje se calculará respecto al tamaño del viewport y no respecto al contenedor.</p>
+        </li>
+    </ul>
+
+    <h2>Ejemplos:</h2>
+    <table class="tabla">
+        <tr>
+            <td>
+                <pre><code>
+.box-1 {  
+    width: 50px;
+    height: 50px;
+}
+
+.box-2 {
+    width: 50%;
+    height: 50%;
+}
+                </code></pre>
+            </td>
+            <td>
+                <pre><code>
+.box-3, .box-4 {
+    width: 100%;
+    height: auto;
+}
+                </code></pre>
+            </td>
+            <td>
+                <pre><code>
+.box-5 {
+    width: 50px;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.box-6 {
+    width: 50px;
+    height: 100%;
+}
+                </code></pre>
+            </td>
+        </tr>
+        <tr>
+            <td class="celda">
+                <div class="body">
+                    <div class="container">
+                        <div class="box-1"></div>
+                        <div class="box-2"></div>
+                    </div>
+                </div>
+            </td>
+            <td class="celda">
+                <div class="body">
+                    <div class="container">
+                        <div class="box-3">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                        <div class="box-4">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td class="celda">
+                <div class="body">
+                    <div class="container">
+                        <div class="box-5"></div>
+                        <div class="box-6"></div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

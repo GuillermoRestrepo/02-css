@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 0px;
+}
+
+pre {
+    margin: 0px;
+    padding: 5px 20px;
+}
+
+code {
+    margin: 0px;
+    padding: 0px;
+}
+
+.celda {
+    width: 320px;
+    height: 320px;
+    align-content: center;
+}
+
+.body {
+    background-color: #333;
+    width: 300px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+    align-content: center;
+    position: relative;
+}
+
+.container {
+    background-color: #666;
+    width: 200px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+}
+
+.box-1, .box-2, .box-3, .box-4, .box-5, .box-6 {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.box-1, .box-3, .box-5 {
+    background-color: lightseagreen;
+}
+
+.box-2, .box-4, .box-6 {
+    background-color: lightsalmon;
+}
+
+.box-1 {  
+    width: 50px;
+    height: 50px;
+}
+
+.box-2 {
+    width: 50%;
+    height: 50%;
+}
+
+.box-3, .box-4 {
+    width: 100%;
+    height: auto;
+}
+
+.box-5 {
+    position: absolute;
+    width: 50px;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+}
+
+.box-6 {
+    width: 50px;
+    height: 100%;
+}
