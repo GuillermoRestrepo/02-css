@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="04-vw-vh-vmin-vmax.css">
+    <title>vw, vh, vmin, vmax</title>
+</head>
+<body>
+    <p>NOTA: PARA VER EL FUNCIONAMIENTO HAY Q CAMBIAR EL TAMAÑO DE LA VENTANA DEL NAVEGADOR</p>
+
+    <h2>(<code>vw</code>)</h2>
+    <p>Cálcula el tamaño del elemento, tomando como referencia el ancho del (viewport) del navegador.</p>
+    <h3>Ejemplo:</h3>
+    <pre><code>
+.box-1 {
+    width: 30vw;
+}
+    </code></pre>
+    <div class="box-1"></div>
+    
+    <h2>(<code>vh</code>)</h2>
+    <p>Cálcula el tamaño del elemento, tomando como referencia el alto del (viewport) del navegador</p>
+    <h3>Ejemplo:</h3>
+    <pre><code>
+.box-2 {
+    width: 40vh;
+}
+    </code></pre>
+    <div class="box-2"></div>
+
+    <h2>(<code>vmin</code>)</h2>
+    <p>Cálcula el tamaño del elemento, tomando como referencia el valor más pequeño entre el alto y el ancho del (<code>viewport</code>)</p>
+    <h3>Ejemplo:</h3>
+    <pre><code>
+.box-3 {
+    width: 30vmin;
+}
+    </code></pre>
+    <div class="box-3"></div>
+
+    <h2>(<code>vmax</code>)</h2>
+    <p>Cálcula el tamaño del elemento, tomando como referencia el valor más grande entre el alto y el ancho del (<code>viewport</code>)</p>
+    <h3>Ejemplo:</h3>
+    <pre><code>
+.box-4 {
+    width: 40vmax;
+}
+    </code></pre>
+    <div class="box-4"></div>
+
+    <p>NOTA: cuando se use vmin y vmax, todo dependerá de las dimensiones del viewpor y si este cambia de tamaño.</p>
+</body>
+</html>
