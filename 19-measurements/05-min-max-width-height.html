@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="05-min-max-width-height.css">
+    <title>min max - width height</title>
+</head>
+<body>
+    <h2>TRUCO</h2>
+    <p>Muchas veces el elemento (<code>body</code>) no ocupa el 100% del viewpor, cuando se desea tener un pie de pagina que vaya pegado a la parte inferior del elemento (<code>body</code>), queda flotando ya que se pega al (<code>body</code>) pero no al viewport, es aqui cuando se usa un (<code>min-height: 100vh;</code>) para que el body ocupe todo el tamaño del viewport.</p>
+
+    <h2>(<code>min-width: ;</code>)</h2>
+    <p>Sirve para indicar cual va a ser el ANCHO MÍNIMO que puede tener un elemento.</p>
+    <h3>Ejemplo:</h3>
+    <pre><code>
+.box-1 {
+    min-width: 400px;
+}
+    </code></pre>
+    <div class="box-1"></div>
+
+    <h2>(<code>max-width: ;</code>)</h2>
+    <p>Sirve para indicar cual va a ser el ANCHO MÁXIMO que puede tener un elemento.</p>
+    <h3>Ejemplo:</h3>
+    <pre><code>
+.box-2 {
+    max-width: 500px;
+}
+    </code></pre>
+    <div class="box-2"></div>
+
+    <h2>(<code>max-height: ;</code>)</h2>
+    <p>Sirve para indicar cual va a ser el ALTO MÁXIMO que puede tener un elemento.</p>
+    <h3>Ejemplo:</h3>
+    <pre><code>
+.box-4 {
+    max-height: 200px;
+}
+    </code></pre>
+    <div class="box-4"></div>
+
+    <h2>(<code>min-height: ;</code>)</h2>
+    <p>Sirve para indicar cual va a ser el ALTO MÍNIMO que puede tener un elemento.</p>
+    <h3>Ejemplo:</h3>
+    <pre><code>
+.box-3 {
+    min-height: 200px;
+}
+    </code></pre>
+    <div class="box-3"></div>
+</body>
+</html>
