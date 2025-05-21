@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="01-current-color.css">
+    <title>currentColor</title>
+</head>
+<body>
+    <h1> Valor <code>currentColor</code></h1>
+    <p>Al poner este valor en alguna propiedad que requiera un color, hará que el color de esta propiedad sea del mismo color que la letra del elemento ancestro mas cercano que tenga la propiedad color definida.</p>
+    
+    <h2>Ejemplo</h2>
+    <p>En este ejemplo se puede ver como el cuadradito del centro que es el elemento hijo, tomará el color de la propiedad <code>color</code> del primer ancestro que tenga un color definido.</p>
+    <p>Si ningun ancestro tiene la propiedad <code>color</code> definida, este tomará el color por defecto del navegador que en la mayoria de navegadores es negro.</p>
+    <table class="tabla">
+        <tr>
+            <td>
+                <pre><code>
+.hijo {
+    background-color: currentColor;
+    width: 25px;
+    height: 25px;
+}
+
+.bisabuelo-1 {
+    color: red;
+}
+
+.abuelo-1 {
+    color: green;
+}
+
+.padre-1 {
+    color: blue;
+}
+                </code></pre>
+            </td>
+            <td>
+                <pre><code>
+.hijo {
+    background-color: currentColor;
+    width: 25px;
+    height: 25px;
+}
+
+.bisabuelo-2 {
+    color: red;
+}
+
+.abuelo-2 {
+    color: green;
+}
+
+.padre-2 {
+    color: none;
+}
+                </code></pre>
+            </td>
+            <td>
+                <pre><code>
+.hijo {
+    background-color: currentColor;
+    width: 25px;
+    height: 25px;
+}
+
+.bisabuelo-3 {
+    color: red;
+}
+
+.abuelo-3 {
+    color: none;
+}
+
+.padre-3 {
+    color: none;
+}
+                </code></pre>
+            </td>
+            <td>
+                <pre><code>
+.hijo {
+    background-color: currentColor;
+    width: 25px;
+    height: 25px;
+}
+
+.bisabuelo-4 {
+    color: none;
+}
+
+.abuelo-4 {
+    color: none;
+}
+
+.padre-4 {
+    color: none;
+}
+                </code></pre>
+            </td>
+        </tr>
+        <tr>
+            <td class="celda">
+                <div class="bisabuelo-1">
+                    <p>Bisabuelo</p>
+                    <div class="abuelo-1">
+                        <p>Abuelo</p>
+                        <div class="padre-1">
+                            <p>Padre</p>
+                            <div class="hijo"></div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td class="celda">
+                <div class="bisabuelo-2">
+                    <p>Bisabuelo</p>
+                    <div class="abuelo-2">
+                        <p>Abuelo</p>
+                        <div class="padre-2">
+                            <p>Padre</p>
+                            <div class="hijo"></div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td class="celda">
+                <div class="bisabuelo-3">
+                    <p>Bisabuelo</p>
+                    <div class="abuelo-3">
+                        <p>Abuelo</p>
+                        <div class="padre-3">
+                            <p>Padre</p>
+                            <div class="hijo"></div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td class="celda">
+                <div class="bisabuelo-4">
+                    <p>Bisabuelo</p>
+                    <div class="abuelo-4">
+                        <p>Abuelo</p>
+                        <div class="padre-4">
+                            <p>Padre</p>
+                            <div class="hijo"></div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
