@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin: 0px;
+    padding: 0px;
+}
+
+.tabla {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+pre {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 3px 5px;
+}
+
+.celda {
+    width: 270px;
+    height: 270px;
+    padding: 10px;
+}
+.triangulo-1, .triangulo-2 {
+    width: auto;
+    height: auto;
+}
+
+.triangulo-1 {
+    border-top: 125px solid red;
+    border-bottom: 125px solid red;
+    border-left: 125px solid blue;
+    border-right: 125px solid blue;
+}
+
+.triangulo-2 {
+    border-bottom:250px solid red;
+    border-left: 125px solid;
+    border-right: 125px solid;
+    border-left-color: transparent;
+    border-right-color: transparent;
+}
+
+.triangulo-3 {
+    border-top:250px solid red;
+    border-left: 125px solid;
+    border-right: 125px solid;
+    border-left-color: transparent;
+    border-right-color: transparent;
+}
+
+.triangulo-4 {
+    border-left: 250px solid red;
+    border-top: 125px solid;
+    border-bottom: 125px solid;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+}
+
+.triangulo-5 {
+    border-right: 250px solid red;
+    border-top: 125px solid;
+    border-bottom: 125px solid;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+}

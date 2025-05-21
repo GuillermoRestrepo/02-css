@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="00-transparent.css">
+    <title>transparent</title>
+</head>
+<body>
+    <h1><code>transparent</code></h1>
+    <p>transparent no es un color como tal, simplemente vuelve invisible/transparente el elemento o la parte del elemento q cuente con este.</p>
+    <h2>Ejemplos</h2>
+    <table class="tabla">
+        <tr>
+            <td>
+                <pre><code>
+.triangulo-1 {
+    border-top: 125px solid red;
+    border-bottom: 125px solid red;
+    border-left: 125px solid blue;
+    border-right: 125px solid blue;
+}
+                </code></pre>
+            </td>
+            <td>
+                <pre><code>
+.triangulo-2 {
+    border-bottom:250px solid red;
+    border-left: 125px solid;
+    border-right: 125px solid;
+    border-left-color: transparent;
+    border-right-color: transparent;
+}
+                </code></pre>
+            </td>
+            <td>
+                <pre><code>
+.triangulo-3 {
+    border-top:250px solid red;
+    border-left: 125px solid;
+    border-right: 125px solid;
+    border-left-color: transparent;
+    border-right-color: transparent;
+}
+                </code></pre>
+            </td>
+            <td>
+                <pre><code>
+.triangulo-4 {
+    border-left: 250px solid red;
+    border-top: 125px solid;
+    border-bottom: 125px solid;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+}
+                </code></pre>
+            </td>
+            <td>
+                <pre><code>
+.triangulo-5 {
+    border-right: 250px solid red;
+    border-top: 125px solid;
+    border-bottom: 125px solid;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+}
+                </code></pre>
+            </td>
+        </tr>
+        <tr>
+            <td class="celda">
+                <div class="triangulo-1"></div>
+            </td>
+            <td class="celda">
+                <div class="triangulo-2"></div>
+            </td>
+            <td class="celda">
+                <div class="triangulo-3"></div>
+            </td>
+            <td class="celda">
+                <div class="triangulo-4"></div>
+            </td>
+            <td class="celda">
+                <div class="triangulo-5"></div>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
