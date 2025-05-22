@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="02-rgb.css">
+    <title>R G B</title>
+</head>
+<body>
+    <p><strong>NOTA:</strong> la opacidad / trasparentar puede servir para darle efectos a botones, sombras de elementos, relieves y demas.</p>
+
+    <h1>GAMA DE COLORES (R G B)</h1>
+    <p>Se basa en 3 segmentos (Red, Green, Blue), de 8 bits cada segmento, cada bit puede tener el valor de 0 o 1, yendo desde (00000000) hasta (11111111).</p>
+    <p>Representados en el sistema decimal de 0 a 255.</p>
+    <p>Y existe un 4to valor que sirve para representar la trasparencia del elemento, este puede ir de 0 a 1.</p>
+
+    <h2>Nomenclatura</h2>
+    <ul>
+        <li><code>rgb(R G B)</code></li>
+        <li><code>rgb(R, G, B)</code></li>
+        <li><code>rgb(R, G, B, A)</code></li>
+        <li><code>rgba(R, G, B, A)</code></li>
+        <li><code>rgb(R G B / A)</code></li>
+    </ul>
+
+    <h2>Ejemplos</h2>
+    <table class="tabla">
+        <tr>
+            <td>
+                <pre><code>
+.box-1 {
+    background-color: rgb(0 0 0);
+}
+                </code></pre>
+            </td>
+            <td>
+                <pre><code>
+.box-2 {
+    background-color: rgb(255, 255, 255);
+}
+                </code></pre>
+            </td>
+            <td>
+                <pre><code>
+.box-3 {
+    background-color: rgb(255, 0, 0, 0.25);
+}
+                </code></pre>
+            </td>
+            <td>
+                <pre><code>
+.box-4 {
+    background-color: rgba(0, 255, 0, 0.5);
+}
+                </code></pre>
+            </td>
+            <td>
+                <pre><code>
+.box-5 {
+    background-color: rgb(0 0 255 / 0.75);
+}
+                </code></pre>
+            </td>
+        </tr>
+        <tr>
+            <td class="celda">
+                <div class="container">
+                    <div class="box-1"></div>
+                </div>
+            </td>
+            <td class="celda">
+                <div class="container">
+                    <div class="box-2"></div>
+                </div>
+            </td>
+            <td class="celda">
+                <div class="container">
+                    <div class="box-3"></div>
+                </div>
+            </td>
+            <td class="celda">
+                <div class="container">
+                    <div class="box-4"></div>
+                </div>
+            </td>
+            <td class="celda">
+                <div class="container">
+                    <div class="box-5"></div>
+                </div>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
