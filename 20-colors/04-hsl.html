@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="04-hsl.css">
+    <title>hsl</title>
+</head>
+<body>
+    <h1>COLORES CON (<code>hsl</code>)</h1>
+    <p>HSL significa:</p>
+    <ul>
+        <li>H = Hue (Tono)</li>
+        <li>S = Saturation (Saturación)</li>
+        <li>L = Lightness (Luminosidad)</li>
+    </ul>
+
+    <img height="300px" src="../image/02-colors-hsl.jpg" alt="imagen de los tonos en el modelo de color hsl">
+
+    <img height="300px" src="../image/03-valores-hsl.png" alt="ubicacion de tono, saturacion y luminosidad del modelo de color hsl">
+
+    <p>Es un modelo de color más intuitivo que RGB, ya que permite manipular el tono, la viveza y la claridad del color de forma separada.</p>
+
+    <h2>Sintaxis</h2>
+    <ul>
+        <li><code>hsl(h s l)</code></li>
+        <li><code>hsl(h, s, l)</code></li>
+        <li><code>hsla(h s l / transparencia)</code></li>
+        <li><code>hsla(h, s, l, transparencia)</code></li>
+    </ul>
+
+    <h2>Tono</h2>
+    <p>Representa el color básico en un círculo cromático de 360°:</p>
+    <table>
+        <thead>
+            <th>Hue (°)</th>
+            <th>Color</th>
+        </thead>
+        <tr>
+            <td>0°</td>
+            <td>Rojo</td>
+        </tr>
+        <tr>
+            <td>60°</td>
+            <td>Amarillo</td>
+        </tr>
+        <tr>
+            <td>120°</td>
+            <td>Verde</td>
+        </tr>
+        <tr>
+            <td>180°</td>
+            <td>Cian</td>
+        </tr>
+        <tr>
+            <td>240°</td>
+            <td>Azul</td>
+        </tr>
+        <tr>
+            <td>300°</td>
+            <td>Magenta</td>
+        </tr>
+        <tr>
+            <td>360°/0°</td>
+            <td>Rojo otra vez</td>
+        </tr>
+    </table>
+
+    <h2>Saturación</h2>
+    <p>Determina qué tan intenso o apagado es el color:</p>
+    <ul>
+        <li>100% = color totalmente saturado</li>
+        <li>0% = gris (sin color)</li>
+    </ul>
+
+    <h2>Luminosidad</h2>
+    <p>Determina qué tan claro u oscuro es el color:</p>
+    <ul>
+        <li>0% = negro</li>
+        <li>50% = color normal</li>
+        <li>100% = blanco</li>
+    </ul>
+
+    <h2>Ejemplos Y Sintaxis</h2>
+    <h3>SIN Opacidad / Transparencia</h3>
+    <table class="tabla">
+        <tr>
+            <td>
+                <p class="description">Red</p>
+                <pre><code>
+hsl(0 100% 50%)
+                </code></pre>
+            </td>
+            <td>
+                <p class="description">Yellow</p>
+                <pre><code>
+hsl(60, 100%, 50%)
+                </code></pre>
+            </td>
+            <td>
+                <p class="description">Green</p>
+                <pre><code>
+hsl(120 100% 50%)
+                </code></pre>
+            </td>
+            <td>
+                <p class="description">Cyan</p>
+                <pre><code>
+hsl(180, 100%, 50%)
+                </code></pre>
+            </td>
+            <td>
+                <p class="description">Blue</p>
+                <pre><code>
+hsl(240 100% 50%)
+                </code></pre>
+            </td>
+            <td>
+                <p class="description">Magenta</p>
+                <pre><code>
+hsl(300, 100%, 50%)
+                </code></pre>
+            </td>
+        </tr>
+        <tr>
+            <td class="celda">
+                <div class="box-1"></div>
+            </td>
+            <td class="celda">
+                <div class="box-2"></div>
+            </td>
+            <td class="celda">
+                <div class="box-3"></div>
+            </td>
+            <td class="celda">
+                <div class="box-4"></div>
+            </td>
+            <td class="celda">
+                <div class="box-5"></div>
+            </td>
+            <td class="celda">
+                <div class="box-6"></div>
+            </td>
+        </tr>
+    </table>
+
+    <h3>CON Opacidad / Transparencia</h3>
+    <table>
+        <tr>
+            <td>
+                <p class="description">Rojo con 50% transparencia</p>
+            <pre><code>
+hsl(0, 100%, 50%, 0.5)
+            </code></pre>
+            </td>
+            <td>
+                <p class="description">Verde con 50% transparencia</p>
+            <pre><code>
+hsl(120 100% 50% / 0.5)
+            </code></pre>
+            </td>
+            <td>
+                <p class="description">Azul con 50% transparencia</p>
+            <pre><code>
+hsla(240, 100%, 50%, 0.5)
+            </code></pre>
+            </td>
+        </tr>
+        <tr>
+            <td class="celda">
+                <div class="box-7"></div>
+            </td>
+            <td class="celda">
+                <div class="box-8"></div>
+            </td>
+            <td class="celda">
+                <div class="box-9"></div>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
