@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="03-hexadecimal.css">
+    <title>hexadecimal</title>
+</head>
+<body>
+    <h1>COLORES HEXADECIMALES</h1>
+    <p>Los colores hexadecimales, es una forma de representar colores rgb pero en notacion hexadecimal (base 16).</p>
+    
+    <h2>Sintaxis</h2>
+    <p>Deben de comenzar con el caracter de numeral (#), seguido de 3, 4, 6 u 8 digitos y cada digito puede tener 16 valores de 0 a f (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, a, b, c, d, e, f).</p>
+    <ul>
+        <li>
+            <p><em>Con 8 digitos (#00000099):</em> las primeras 3 parejas de digitos representa un color R G B y las 4ta pareja de digitos representa la opacidad/transparencia.</p>
+            <p>Ejemplo:</p>
+            <div class="box-1"><code>background-color: #01020399;</code></div>
+        </li>
+        <li>
+            <p><em>Con 4 digitos (#0009):</em> si cada pareja tiene digitos iguales, se puede abreviar utilizando solo un digito por pareja (#11223344 = #1234).</p>
+            <p>Ejemplo:</p>
+            <div class="box-2"><code>background-color: #0009;</code></div>
+        </li>
+        <li>
+            <p><em>Con 6 digitos (#000000):</em> cada pareja de digitos representa uno de los 3 colores del R G B respectivamente.</p>
+            <p>Ejemplo:</p>
+            <div class="box-3"><code>background-color: #000000;</code></div>
+        </li>
+        <li>
+            <p><em>Con 3 digitos (#000):</em> si cada pareja tiene digitos iguales, se puede abreviar utilizando solo un digito por pareja (#112233 = #123).</p>
+            <p>Ejemplo:</p>
+            <div class="box-4"><code>background-color: #000;</code></div>
+        </li>
+    </ul>
+    
+    <h2>Ejemplos:</h2>
+    <table>
+        <tr>
+            <td>
+                <p class="description">Negro Puro</p>
+                <pre><code>
+.box-5 {
+    background-color: #000000;
+}
+                </code></pre>
+            </td>
+            <td>
+                <p class="description">Blanco Puro</p>
+                <pre><code>
+.box-6 {
+    background-color: #ffffff;
+}
+                </code></pre>
+            </td>
+            <td>
+                <p class="description">Rojo Puro</p>
+                <pre><code>
+.box-7 {
+    background-color: #ff0000;
+}
+               </code></pre>
+            </td>
+            <td>
+                <p class="description">Verde Puro</p>
+                <pre><code>
+.box-8 {
+    background-color: #00ff00;
+}
+                </code></pre>
+            </td>
+            <td>
+                <p class="description">Azul Puro</p>
+                <pre><code>
+.box-9 {
+    background-color: #0000ff;
+}
+                </code></pre>
+            </td>
+        </tr>
+        <tr>
+            <td class="celda">
+                <div class="box-5"></div>
+            </td>
+            <td class="celda">
+                <div class="box-6"></div>
+            </td>
+            <td class="celda">
+                <div class="box-7"></div>
+            </td>
+            <td class="celda">
+                <div class="box-8"></div>
+            </td>
+            <td class="celda">
+                <div class="box-9"></div>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
