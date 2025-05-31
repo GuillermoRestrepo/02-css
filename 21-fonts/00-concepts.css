@@ -1,0 +1,19 @@
+.con-serifa {
+    font-family: serif;
+}
+
+.sin-serifa {
+    font-family: sans-serif;
+}
+
+.a-mano {
+    font-family: cursive;
+}
+
+.mono-espaciado {
+    font-family: monospace;
+}
+
+.decorativo {
+    font-family: fantasy;
+}

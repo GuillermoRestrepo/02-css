@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="00-concepts.css">
+    <title>Conceptos - Fuentes</title>
+</head>
+<body>
+    <h1>Fuentes - Conceptos Básicos</h1>
+    <dl>
+        <dt>Tipografía</dt>
+        <dd>
+            Es la ciencia que estudia la creación, el uso y el diseño de las letras.
+        </dd>
+
+        <dt>Fuente</dt>
+        <dd>
+            Es el conjunto de glifos que tienen un mismo estilo.
+        </dd>
+
+        <dt>Glifo</dt>
+        <dd>
+            Es la representación grafica indiidual de cada letra, caracter, signo, simbolo, acento, etc.
+        </dd>
+
+        <dt>Estilos De Fuente</dt>
+        <dd>
+            Los estilos de una fuente son las variaciones visuales que puede tener una misma fuente, como normal, negrita, cursiva o subrayada.
+        </dd>
+
+        <dt>Familia tipográfica (de fuente)</dt>
+        <dd>
+            Son todas las fuentes que derivan de un tipo de fuente pricipal. Ejemplo: Arial / Arial Black / Arial Nova, todas pertenecen a la familia de la fuente Arial.
+        </dd>
+
+        <dt>Falsear Estilos</dt>
+        <dd>
+            Es dar un estilo a una fuente la cual no cuenta con dicho estilo. Ejemplo: dar negrita a la fuente Arial, cuando lo corracto seria usar la fuente Arial Black
+        </dd>
+
+        <dt>Al utilizar alguna propiedad (text-...)</dt>
+        <dd>
+            Afectará al elemento total.
+        </dd>
+
+        <dt>Al utilizar alguna propiedad (font-...)</dt>
+        <dd>
+            Se estará afectando unicamente a la fuente de texto.
+        </dd>
+    </dl>
+
+
+    <h2>Fuentes predeterminadas</h2>
+    <p>Son los tipos de letra que el navegador usa por defecto cuando no se especifica una fuente. Estas fuentes varían según el sistema operativo y el navegador, y suelen pertenecer a familias genéricas como serif, sans-serif o monospace.</p>
+    <dl>
+        <dt><strong><code>serif:</code></strong></dt>
+        <dd>
+            <p>Fuente con serifas (adornos en los caracteres). Ejemplo:</p>
+            <p class="con-serifa">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores tempora, quae eveniet non sed in ad, iusto, totam consequuntur ullam dolores mollitia? Sit sint deserunt voluptatibus, tempora quasi omnis iure!
+            </p>
+            <p><em>Código:</em></p>
+            <code>font-family: serif;</code>
+        </dd>
+
+        <dt><strong><code>sans-serif:</code></strong></dt>
+        <dd>
+            <p>Fuentes sin serifas. Ejemplo:</p>
+            <p class="sin-serifa">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores tempora, quae eveniet non sed in ad, iusto, totam consequuntur ullam dolores mollitia? Sit sint deserunt voluptatibus, tempora quasi omnis iure!
+            </p>
+            <p><em>Código:</em></p>
+            <code>font-family: sans-serif;</code>
+        </dd>
+
+        <dt><strong><code>cursive:</code></strong></dt>
+        <dd>
+            <p>Fuentes que intentan emular la escritura a mano. Ejemplo:</p>
+            <p class="a-mano">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores tempora, quae eveniet non sed in ad, iusto, totam consequuntur ullam dolores mollitia? Sit sint deserunt voluptatibus, tempora quasi omnis iure!
+            </p>
+            <p><em>Código:</em></p>
+            <code>font-family: cursive;</code>
+        </dd>
+
+        <dt><strong><code>monospace:</code></strong></dt>
+        <dd>
+            <p>Fuentes que tienen el mismo espaciado para cada caracter (muy usado en código) Ejemplo:</p>
+            <p class="mono-espaciado">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores tempora, quae eveniet non sed in ad, iusto, totam consequuntur ullam dolores mollitia? Sit sint deserunt voluptatibus, tempora quasi omnis iure!
+            </p>
+            <p><em>Código:</em></p>
+            <code>font-family: monospace;</code>
+
+        <dt><strong><code>fantasy:</code></strong></dt>
+        <dd>
+            <p>Fuentes con un estilo decorativo. Ejemplo:</p>
+            <p class="decorativo">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores tempora, quae eveniet non sed in ad, iusto, totam consequuntur ullam dolores mollitia? Sit sint deserunt voluptatibus, tempora quasi omnis iure!
+            </p>
+            <p><em>Código:</em></p>
+            <code>font-family: fantasy;</code>
+        </dd>
+    </dl>
+
+    <h2>NOTAS</h2>
+    <ul>
+        <li>Es preferible utilizar fuentes sin serifa, ya que es mas facil de leer para el usuario.</li>
+        <li>Ciertas etiquetas tienen su propia fuente y estilo de letra, como la etiqueta <code>&lt;code&gt;</code> que utiliaza la fuente <code>monospace</code>, siendo esto apropiado, ya que sirve para representar código.</li>
+    </ul>
+</body>
+</html>
