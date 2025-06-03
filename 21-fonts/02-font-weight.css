@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0.5vh 0.5vw;
+    min-height: 100vh;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.tabla {
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+pre, .p1, .p2, .p3, .p4 {
+    margin: 0px;
+    padding: 0px;
+}
+
+.celda {
+    padding: 1vh 1vw;
+}
+
+.p1 {
+    font-weight: lighter;
+}
+
+.p2 {
+    font-weight: normal;
+}
+
+.p3 {
+    font-weight: bolder;
+}
+
+.p4 {
+    font-weight: bold;
+}
