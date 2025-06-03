@@ -1,19 +1,21 @@
-.con-serifa {
-    font-family: serif;
+* {
+    box-sizing: border-box;
 }
 
-.sin-serifa {
-    font-family: sans-serif;
+body {
+    margin: 0px;
+    padding-left: 0.5vw;
 }
 
-.a-mano {
-    font-family: cursive;
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
 }
 
-.mono-espaciado {
-    font-family: monospace;
+.tabla {
+    width: 45vw;
 }
 
-.decorativo {
-    font-family: fantasy;
+.celda {
+    padding: 0.5vw 1vw;
 }
