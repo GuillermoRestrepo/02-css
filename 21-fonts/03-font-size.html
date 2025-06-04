@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="03-font-size.css">
+    <title>font-size</title>
+</head>
+<body>
+    <h1>PROPIEDAD - (<code>font-size</code>)</h1>
+    <p>Esta propiedad se utiliza para definir el tamaño de un texto.</p>
+    <h2>Unidades De Medida</h2>
+    <table>
+        <thead>
+            <th>Absolutas</th>
+            <th>Relativas</th>
+        </thead>
+        <tr>
+            <td>px</td>
+            <td>em</td>
+        </tr>
+        <tr>
+            <td>pt</td>
+            <td>rem</td>
+        </tr>
+        <tr>
+            <td>cm</td>
+            <td>%</td>
+        </tr>
+        <tr>
+            <td>mm</td>
+            <td>vw</td>
+        </tr>
+        <tr>
+            <td>in</td>
+            <td>vh</td>
+        </tr>
+    </table>
+    <h2>Valores Textuales</h2>
+    <table>
+        <thead>
+            <th>Valor</th>
+            <th>Relación aproximada con el texto normal</th>
+        </thead>
+        <tr>
+            <td>xx-small</td>
+            <td>Muy, muy pequeño</td>
+        </tr>
+        <tr>
+            <td>x-small</td>
+            <td>Muy pequeño</td>
+        </tr>
+        <tr>
+            <td>small</td>
+            <td>Pequeño</td>
+        </tr>
+        <tr>
+            <td>medium</td>
+            <td>Normal (por defecto)</td>
+        </tr>
+        <tr>
+            <td>large</td>
+            <td>Grande</td>
+        </tr>
+        <tr>
+            <td>x-large</td>
+            <td>Muy grande</td>
+        </tr>
+        <tr>
+            <td>xx-large</td>
+            <td>Muy, muy grande</td>
+        </tr>
+        <tr>
+            <td>larger</td>
+            <td>Más grande que el padre</td>
+        </tr>
+        <tr>
+            <td>smaller</td>
+            <td>Más pequeño que el padre</td>
+        </tr>
+    </table>
+
+    <h2>Ejemplo</h2>
+    <table class="tabla">
+        <tr>
+            <td class="celda">
+                <pre><code>
+font-size: xx-small;
+                </code></pre>
+            </td>
+            <td class="celda">
+                <pre><code>
+font-size: x-small;
+                </code></pre>
+            </td>
+            <td class="celda">
+                <pre><code>
+font-size: small;
+                </code></pre>
+            </td>
+            <td class="celda">
+                <pre><code>
+font-size: medium;
+                </code></pre>
+            </td>
+            <td class="celda">
+                <pre><code>
+font-size: large;
+                </code></pre>
+            </td>
+            <td class="celda">
+                <pre><code>
+font-size: x-large;
+                </code></pre>
+            </td>
+            <td class="celda">
+                <pre><code>
+font-size: xx-larg;
+                </code></pre>
+            </td>
+        </tr>
+        <tr>
+            <td class="celda">
+                <p class="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt magni quaerat adipisci vel blanditiis consequuntur earum sit commodi quod quis, possimus accusantium porro, deserunt, aperiam culpa eos est explicabo ipsa?</p>
+            </td>
+            <td class="celda">
+                <p class="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt magni quaerat adipisci vel blanditiis consequuntur earum sit commodi quod quis, possimus accusantium porro, deserunt, aperiam culpa eos est explicabo ipsa?</p>
+            </td>
+            <td class="celda">
+                <p class="p3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt magni quaerat adipisci vel blanditiis consequuntur earum sit commodi quod quis, possimus accusantium porro, deserunt, aperiam culpa eos est explicabo ipsa?</p>
+            </td>
+            <td class="celda">
+                <p class="p4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt magni quaerat adipisci vel blanditiis consequuntur earum sit commodi quod quis, possimus accusantium porro, deserunt, aperiam culpa eos est explicabo ipsa?</p>
+            </td>
+            <td class="celda">
+                <p class="p5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt magni quaerat adipisci vel blanditiis consequuntur earum sit commodi quod quis, possimus accusantium porro, deserunt, aperiam culpa eos est explicabo ipsa?</p>
+            </td>
+            <td class="celda">
+                <p class="p6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt magni quaerat adipisci vel blanditiis consequuntur earum sit commodi quod quis, possimus accusantium porro, deserunt, aperiam culpa eos est explicabo ipsa?</p>
+            </td>
+            <td class="celda">
+                <p class="p7">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt magni quaerat adipisci vel blanditiis consequuntur earum sit commodi quod quis, possimus accusantium porro, deserunt, aperiam culpa eos est explicabo ipsa?</p>
+            </td>
+        </tr>
+    </table>
+    
+    <h2>Notas:</h2>
+    <ul>
+        <li>Evitar el uso de px, ya que no se escala bien en diferentes tamaños de pantalla.</li>
+        <li>Usar rem o em para lograr un diseño más fluido y adaptativo.</li>
+        <li>Mantener el tamaño de la fuente base (<code>html { font-size: 100%;}</code>) para ser tomado como referencia.</li>
+    </ul>
+</body>
+</html>
