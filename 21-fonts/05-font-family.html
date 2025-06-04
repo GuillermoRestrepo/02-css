@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="05-font-family.css">
+    <title>font-family</title>
+</head>
+<body>
+    <h1>PROPIEDAD - (<code>font-family</code>)</h1>
+    <p>Esta propiedad sirve para definir la fuente que tendra un texto.</p>
+    <p><code>font-family</code> especifica una lista de fuentes que el navegador debe intentar aplicar al texto. Si no puede usar la primera, pasará a la siguiente, y así sucesivamente hasta encontrar una fuente disponible. Ejemplo:</p>
+    <pre><code>
+p {
+  font-family: "Open Sans", Arial, sans-serif;
+}
+    </code></pre>
+    <p>Esto significa:</p>
+    <ol>
+        <li>Usa "Open Sans" si está disponible.</li>
+        <li>Si no, usa Arial.</li>
+        <li>Si tampoco está, usa cualquier fuente sans-serif disponible en el sistema.</li>
+    </ol>
+
+    <h2>Valores Predeterminados</h2>
+    <p>Son varios tipos de fuentes que el navegador siempre puede interpretar:</p>
+    <table>
+        <tr>
+            <td>serif</td>
+            <td>Fuentes con serifas (ej: Times, Georgia)</td>
+        </tr>
+        <tr>
+            <td>sans-serif</td>
+            <td>Fuentes sin serifas (ej: Arial, Helvetica)</td>
+        </tr>
+        <tr>
+            <td>monospace</td>
+            <td>Todas las letras ocupan el mismo ancho (ej: Courier New)</td>
+        </tr>
+        <tr>
+            <td>cursive</td>
+            <td>Parecen escritura a mano</td>
+        </tr>
+        <tr>
+            <td>fantasy</td>
+            <td>Decorativas, poco comunes</td>
+        </tr>
+        <tr>
+            <td>system-ui</td>
+            <td>Usa la fuente del sistema operativo (muy útil para apps modernas)</td>
+        </tr>
+    </table>
+
+    <h2>Ejemplo</h2>
+    <table class="tabla">
+        <tr>
+            <td>
+                <pre><code>
+font-family: serif;
+                </code></pre>
+            </td>
+            <td>
+                <pre><code>
+font-family: sans-serif;
+                </code></pre>
+            </td>
+            <td>
+                <pre><code>
+font-family: monospace;
+                </code></pre>
+            </td>
+            <td>
+                <pre><code>
+font-family: cursive;
+                </code></pre>
+            </td>
+            <td>
+                <pre><code>
+font-family: fantasy;
+                </code></pre>
+            </td>
+            <td>
+                <pre><code>
+font-family: system-ui;
+                </code></pre>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p class="p1">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus perferendis quaerat numquam, fugit expedita soluta in sint voluptatem sunt debitis autem doloribus tempora incidunt mollitia aspernatur velit totam fugiat aliquid.
+                </p>
+            </td>
+            <td>
+                <p class="p2">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus perferendis quaerat numquam, fugit expedita soluta in sint voluptatem sunt debitis autem doloribus tempora incidunt mollitia aspernatur velit totam fugiat aliquid.
+                </p>
+            </td>
+            <td>
+                <p class="p3">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus perferendis quaerat numquam, fugit expedita soluta in sint voluptatem sunt debitis autem doloribus tempora incidunt mollitia aspernatur velit totam fugiat aliquid.
+                </p>
+            </td>
+            <td>
+                <p class="p4">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus perferendis quaerat numquam, fugit expedita soluta in sint voluptatem sunt debitis autem doloribus tempora incidunt mollitia aspernatur velit totam fugiat aliquid.
+                </p>
+            </td>
+            <td>
+                <p class="p5">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus perferendis quaerat numquam, fugit expedita soluta in sint voluptatem sunt debitis autem doloribus tempora incidunt mollitia aspernatur velit totam fugiat aliquid.
+                </p>
+            </td>
+            <td>
+                <p class="p6">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus perferendis quaerat numquam, fugit expedita soluta in sint voluptatem sunt debitis autem doloribus tempora incidunt mollitia aspernatur velit totam fugiat aliquid.
+                </p>
+            </td>
+        </tr>
+    </table>
+
+    <h2>Notas:</h2>
+    <ul>
+        <li>Para mejorar la lectura es preferible utilizar fuentes sin serifa.</li>
+        <li>Si el nombre de una fuente contiene espacios, hay que ponerlo entre comillas.</li>
+        <li>Se puede utilizar diferentes tipos de fuentes provenientes de diferentes recursos, como (google fonts).</li>
+        <li>De la misma manera, no es aconsejable utilizar mas de 2 tipos de fuente en un sitio/página web.</li>
+    </ul>
+</body>
+</html>
