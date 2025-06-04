@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin: 0px;
+}
+
+.tabla {
+    width: 95vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.celda {
+    padding: 1vh 1vw;
+}
+
+pre, .p1, .p2, .p3 {
+    margin: 0px;
+    padding: 0px;
+}
+
+.p1 {
+    line-height: 24px;
+}
+
+.p2 {
+    line-height: 2;
+}
+
+.p3 {
+    line-height: 250%;
+}
