@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>font</title>
+</head>
+<body>
+    <h1>PROPIEDAD - (<code>font</code>)</h1>
+    <p>(<code>font</code>) es una propiedad abreviada (shorthand), la cual permite definir en una sola línea, varias propiedades que estilizan el texto de un elemento.</p>
+
+    <h2>¿Qué Propiedades Combina La Propiedad <code>font</code>?</h2>
+    <p>La propiedad font combina las siguientes propiedades individuales (en este orden):</p>
+    <ol>
+        <li>font-style (opcional)</li>
+        <li>font-weight (opcional)</li>
+        <li>font-size (obligatorio)</li>
+        <li>line-height (opcional)</li>
+        <li>font-family (obligatorio)</li>
+    </ol>
+    <pre><code>
+        font: [font-style] [font-weight] [font-size]/[line-height] [font-family;
+    </code></pre>
+
+    <h2>Ejemplo Mínimo Requerido</h2>
+    <p>Como mínimo, se debe de especificar el tamaño de la letra (<code>font-size</code>) y la fuente de esta (<code>font-family</code>), lo demás es opcional:</p>
+    <pre><code>
+        p {
+            font: 14px Arial, sans-serif;
+        }
+    </code></pre>
+    <p>Al igual que en en la propeidad <code>font-family</code>, es recomendable especificar una fuente de respaldo (fallback) separada por una coma.</p>
+
+    <h2>Ejemplo Completo</h2>
+    <pre><code>
+        p {
+            font: italic bold 16px/1.5 "Georgia", serif;
+        }
+    </code></pre>
+    <p>Lo cual es equivalente a:</p>
+    <pre><code>
+        p {
+            font-style: italic;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 1.5;
+            font-family: "Georgia", serif;
+        }
+    </code></pre>
+
+    <h2>NOTA</h2>
+    <ul>
+        <li>No es aconsejable utilizar la propiedad font, ya que por descuido, se puede afectar a elementos hijos o se pueden reescribir los estilos de otros elementos.</li>
+        <li>Como se puede notar en los ejemplos, la propidades font-size y lineheigh, son separadas por un slash (/).</li>
+    </ul>
+</body>
+</html>
