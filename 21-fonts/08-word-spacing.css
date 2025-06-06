@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0.5vh 0.5vw;
+    min-height: 100vh;
+    font-family: sans-serif;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 1vh 1vw;
+}
+
+pre, .p1, .p2, .p3, .p4 {
+    margin: 0px;
+    padding: 0px;
+}
+
+.p1 {
+    word-spacing: -3px;
+}
+
+.p2 {
+    word-spacing: 8px;
+}
+
+.p3 {
+    word-spacing: -0.1rem;
+}
+
+.p4 {
+    word-spacing: 0.4rem;
+}
