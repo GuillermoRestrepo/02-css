@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0.5vh 0.5vw;
+    min-height: 100vh;
+    font-family: sans-serif;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 1vh 1vw;
+}
+
+.tabla1 {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.celda {
+    width: 250px;
+    height: 250px;
+}
+
+pre, .p0, .p1, .p2, .p3, .p4, .p5, .p6 {
+    margin: 0px;
+    padding: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.p0 {
+    writing-mode: horizontal-tb;
+}
+
+.p1 {
+    writing-mode: vertical-rl;
+}
+
+.p2 {
+    writing-mode: vertical-lr;
+}
+
+.p3 {
+    writing-mode: sideways-rl;
+}
+
+.p4 {
+    writing-mode: sideways-lr;
+}
+
+.p5 {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+}
+
+.p6 {
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+}
+
+.p7 {
+    word-break: break-all;
+    width: 7px;
+}

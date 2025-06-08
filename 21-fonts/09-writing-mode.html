@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="09-writing-mode.css">
+    <title>writing-mode</title>
+</head>
+<body>
+    <h1>PROPIEDAD - (<code>writing-mode</code>)</h1>
+    <p>Esta propiedad hace que la orientación del texto se presente de cierta forma, tal como se muestra a continuación.</p>
+    <table>
+        <thead>
+            <th>Valor</th>
+            <th>Orientación</th>
+        </thead>
+        <tr>
+            <td><code>horizontal-tb</code></td>
+            <td>Este es el valor por defecto, se muestra de arriba hacia abajo y de izqierda a derecha.</td>
+        </tr>
+        <tr>
+            <td><code>vertical-rl</code></td>
+            <td>Gira el texto 90 grados en sentido horario.</td>
+        </tr>
+        <tr>
+            <td><code>vertical-lr</code></td>
+            <td>Gira el texto 90 grados en sentido horario, pero ordena las líneas de izquierda a derecha.</td>
+        </tr>
+        <tr>
+            <td><code>sideways-rl</code></td>
+            <td>Gira el texto 90 grados en sentido horario.</td>
+        </tr>
+        <tr>
+            <td><code>sideways-lr</code></td>
+            <td>Gira el texto 90 grados en sentido anti-horario.</td>
+        </tr>
+    </table>
+
+    <h2>Ejemplo:</h2>
+    <table class="tabla1">
+        <tr>
+            <td>
+                <pre><code>
+/* Valor por defecto */
+
+writing-mode: horizontal-tb;
+                </code></pre>
+            </td>
+            <td>
+                <pre><code>
+writing-mode: vertical-rl;
+                </code></pre>
+            </td>
+            <td>
+                <pre><code>
+writing-mode: vertical-lr;
+                </code></pre>
+            </td>
+            <td>
+                <pre><code>
+writing-mode: sideways-rl;
+                </code></pre>
+            </td>
+            <td>
+                <pre><code>
+writing-mode: sideways-lr;
+                </code></pre>
+            </td>
+        </tr>
+        <tr>
+            <td class="celda">
+                <p class="p0">"Yo no moriré, ¡No importa que mi cuerpo sea destruido por completo! ¡Mis deseos de pelear me levantarán porque son muy grandes! ¡Y después de eso, LOS DERROTARÉ PASE LO QUE PASE!"</p>
+            </td>
+            <td class="celda">
+                <p class="p1">"Yo no moriré, ¡No importa que mi cuerpo sea destruido por completo! ¡Mis deseos de pelear me levantarán porque son muy grandes! ¡Y después de eso, LOS DERROTARÉ PASE LO QUE PASE!"</p>
+            </td>
+            <td class="celda">
+                <p class="p2">"Yo no moriré, ¡No importa que mi cuerpo sea destruido por completo! ¡Mis deseos de pelear me levantarán porque son muy grandes! ¡Y después de eso, LOS DERROTARÉ PASE LO QUE PASE!"</p>
+            </td>
+            <td class="celda">
+                <p class="p3">"Yo no moriré, ¡No importa que mi cuerpo sea destruido por completo! ¡Mis deseos de pelear me levantarán porque son muy grandes! ¡Y después de eso, LOS DERROTARÉ PASE LO QUE PASE!"</p>
+            </td>
+            <td class="celda">
+                <p class="p4">"Yo no moriré, ¡No importa que mi cuerpo sea destruido por completo! ¡Mis deseos de pelear me levantarán porque son muy grandes! ¡Y después de eso, LOS DERROTARÉ PASE LO QUE PASE!"</p>
+            </td>
+        </tr>
+    </table>
+    
+    <h2>Adicional</h2>
+    <p>Colocar textos en forma de linea vertical o al estilo japoner o chino.</p>
+    <table>
+        <tr>
+            <td>
+                <pre>
+                    <code>
+writing-mode: vertical-rl;
+text-orientation: upright;
+                    </code>
+                </pre>
+            </td>
+            <td>
+                <pre>
+                    <code>
+writing-mode: vertical-lr;
+text-orientation: upright;
+                    </code>
+                </pre>
+            </td>
+            <td>
+                <pre>
+                    <code>
+word-break: break-all;
+width: 7px;
+                    </code>
+                </pre>
+            </td>
+        </tr>
+        <tr>
+            <td class="celda">
+                <p class="p5">Yo no moriré, No importa que mi cuerpo sea destruido por completo</p>
+            </td>
+            <td class="celda">
+                <p class="p6">Yo no moriré, No importa que mi cuerpo sea destruido por completo.</p>
+            </td>
+            <td class="celda">
+                <p class="p7">Yo no moriiré.</p>
+            </td>
+        </tr>
+    </table>
+    
+    <h2>Notas:</h2>
+    <p>Al momento de escribir de forma vertical, hay q tomar en cuenta los espacios y los signos de puntuacion.</p>
+    <p>En ciertos casos es mejor separar las palabras en diferentes etiquetas (<code>&lt;span&gt;</code>).</p>
+</body>
+</html>
