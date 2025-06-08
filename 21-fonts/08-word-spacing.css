@@ -18,9 +18,13 @@ th, td {
     padding: 1vh 1vw;
 }
 
-pre, .p1, .p2, .p3, .p4 {
+pre, .p0, .p1, .p2, .p3, .p4 {
     margin: 0px;
     padding: 0px;
+}
+
+.p0 {
+    word-spacing: normal;
 }
 
 .p1 {
