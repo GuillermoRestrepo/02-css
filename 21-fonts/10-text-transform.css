@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0.5vh 0.5vw;
+    min-height: 100vh;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 1vh 1vw;
+    width: 300px;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+pre, .p0, .p1, .p2, .p3 {
+    margin: 0px;
+    padding: 0px;
+}
+
+.p0 {
+    text-transform: none;
+}
+
+.p1 {
+    text-transform: uppercase;
+}
+
+.p2 {
+    text-transform: lowercase;
+}
+
+.p3 {
+    text-transform: capitalize;
+}
+
+
