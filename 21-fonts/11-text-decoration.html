@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="11-text-decoration.css">
+    <title>text-decoration</title>
+</head>
+<body>
+    <h1>PROPIEDAD - (<code>text-decoration</code>)</h1>
+    <p>Es una propiedad abreviada (shorthand), la cual encapsula las siguentes propiedades:</p>
+    <table>
+        <thead>
+            <th>Propiedad</th>
+            <th>¿Que modifica?</th>
+        </thead>
+        <tr>
+            <td>text-decoration-line</td>
+            <td>Ubicación de la línea.</td>
+        </tr>
+        <tr>
+            <td>text-decoration-style</td>
+            <td>Estilo de la línea.</td>
+        <tr>
+            <td>text-decoration-color</td>
+            <td>Color de la línea.</td>
+        </tr>
+        <tr>
+            <td>text-decoration-thickness</td>
+            <td>Grosor de la línea.</td>
+        </tr>
+    </table>
+    <p>El orden de cada propiedad es la siguiente:</p>
+    <pre><code>
+        text-decoration: (line) (style) (color) (thicknes);
+    </code></pre>
+
+    <h2>Ejemplo Mínimo</h2>
+    <pre><code>
+        selector {
+            text-decoration: (line);
+        }
+    </code></pre>
+    
+    <h2>Propeidad - (<code>text-decoration-line</code>)</h2>
+    <table class="tabla0">
+        <tr>
+            <td>
+                <pre><code>
+/* Valor por defecto */
+text-decoration-line: none;
+                </code></pre>
+            </td>
+            <td>
+                <pre><code>
+text-decoration-line: underline;
+                </code></pre>
+            </td>
+            <td>
+                <pre><code>
+text-decoration-line: overline;
+                </code></pre>
+            </td>
+            <td>
+                <pre><code>
+text-decoration-line: line-through;
+                </code></pre>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p class="p0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ullam voluptatum id qui sequi ducimus laudantium ratione.</p>
+            </td>
+            <td>
+                <p class="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ullam voluptatum id qui sequi ducimus laudantium ratione.</p>
+            </td>
+            <td>
+                <p class="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ullam voluptatum id qui sequi ducimus laudantium ratione.</p>
+            </td>
+            <td>
+                <p class="p3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ullam voluptatum id qui sequi ducimus laudantium ratione.</p>
+            </td>
+        </tr>
+    </table>
+
+    <h2>Propeidad - (<code>text-decoration-style)</code></h2>
+    <table class="tabla1">
+        <tr>
+            <td>
+                <pre><code>
+text-decoration-style: solid;
+                </code></pre>
+            </td>
+            <td>
+                <pre><code>
+text-decoration-style: dashed;
+                </code></pre>
+            </td>
+            <td>
+                <pre><code>
+text-decoration-style: dotted;
+                </code></pre>
+            </td>
+            <td>
+                <pre><code>
+text-decoration-style: double;
+                </code></pre>
+            </td>
+            <td>
+                <pre><code>
+text-decoration-style: wavy;
+                </code></pre>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p class="p4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ullam voluptatum id qui sequi ducimus laudantium ratione.</p>
+            </td>
+            <td>
+                <p class="p5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ullam voluptatum id qui sequi ducimus laudantium ratione.</p>
+            </td>
+            <td>
+                <p class="p6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ullam voluptatum id qui sequi ducimus laudantium ratione.</p>
+            </td>
+            <td>
+                <p class="p7">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ullam voluptatum id qui sequi ducimus laudantium ratione.</p>
+            </td>
+            <td>
+                <p class="p8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ullam voluptatum id qui sequi ducimus laudantium ratione.</p>
+            </td>
+        </tr>
+    </table>
+
+    <h2>Propeidad - (<code>text-decoration-color)</code></h2>
+    <table class="tabla2">
+        <tr>
+            <td>
+                <pre><code>
+text-decoration-color: purple;
+                </code></pre>
+            </td>
+            <td>
+                <pre><code>
+text-decoration-color: rgb(255 0 0);
+                </code></pre>
+            </td>
+            <td>
+                <pre><code>
+text-decoration-color: #00ff00;
+                </code></pre>
+            </td>
+            <td>
+                <pre><code>
+text-decoration-color: hsl(240 100% 50%);
+                </code></pre>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p class="p9">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ullam voluptatum id qui sequi ducimus laudantium ratione.</p>
+            </td>
+            <td>
+                <p class="p10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ullam voluptatum id qui sequi ducimus laudantium ratione.</p>
+            </td>
+            <td>
+                <p class="p11">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ullam voluptatum id qui sequi ducimus laudantium ratione.</p>
+            </td>
+            <td>
+                <p class="p12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ullam voluptatum id qui sequi ducimus laudantium ratione.</p>
+            </td>
+        </tr>
+    </table>
+
+    <h2>Propeidad - (<code>text-decoration-thickness)</code></h2>
+    <table class="tabla2">
+        <tr>
+            <td>
+                <pre><code>
+text-decoration-thickness: thick;
+                </code></pre>
+            </td>
+            <td>
+                <pre><code>
+text-decoration-thickness: 3px;
+                </code></pre>
+            </td>
+            <td>
+                <pre><code>
+text-decoration-thickness: 0.3rem;
+                </code></pre>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p class="p13">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ullam voluptatum id qui sequi ducimus laudantium ratione.</p>
+            </td>
+            <td>
+                <p class="p14">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ullam voluptatum id qui sequi ducimus laudantium ratione.</p>
+            </td>
+            <td>
+                <p class="p15">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ullam voluptatum id qui sequi ducimus laudantium ratione.</p>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

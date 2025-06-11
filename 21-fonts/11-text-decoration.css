@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0.5vh 0.5vw;
+    min-height: 100vh;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.tabla0, .tabla1, .tabla2 {
+    width: 95vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th, td {
+    padding: 1vh 1vw;
+
+}
+
+pre, .p0, .p1, .p2, .p3, .p4, .p5, .p6, .p7, .p8, .p9, .p10, .p11, .p12, .p13, .p14, .p15 {
+    margin: 0px;
+    padding: 0px;
+}
+
+.p0 {
+    text-decoration-line: none;
+}
+
+.p1, .p4, .p5, .p6, .p7, .p8, .p9, .p10, .p11, .p12, .p13, .p14, .p15 {
+    text-decoration-line: underline;
+}
+
+.p2 {
+    text-decoration-line: overline;
+}
+
+.p3 {
+    text-decoration-line: line-through;
+}
+
+.p4 {
+    text-decoration-style: solid;
+}
+
+.p5 {
+    text-decoration-style: dashed;
+}
+
+.p6 {
+    text-decoration-style: dotted;
+}
+
+.p7 {
+    text-decoration-style: double;
+}
+
+.p8 {
+    text-decoration-style: wavy;
+}
+
+.p9 {
+    text-decoration-color: purple;
+}
+
+.p10 {
+    text-decoration-color: rgb( 255 0 0);
+}
+
+.p11 {
+    text-decoration-color: #00ff00;
+}
+
+.p12 {
+    text-decoration-color: hsl(240 100% 50%);
+}
+
+.p13 {
+    text-decoration-thickness: thick;
+}
+
+.p14 {
+    text-decoration-thickness: 3px;
+}
+
+.p15 {
+    text-decoration-thickness: 0.3rem;
+}
