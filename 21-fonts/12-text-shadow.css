@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th, td {
+    margin: 0px;
+    padding: 1vh 0.5vw;
+}
+
+.celda {
+    width: 250px;
+    height: 100px;
+    text-align: center;
+}
+
+pre, .t1, .t2, .t3, .t4, .t5 {
+    margin: 0px;
+    padding: 0px;
+}
+
+.t1 {
+    text-shadow: 20px 20px 0px purple;
+}
+
+.t2 {
+    text-shadow: 20px -20px 2px rgb(255 0 0);
+}
+
+.t3 {
+    text-shadow: -20px 20px 4px #00ff00;
+}
+
+.t4 {
+    text-shadow: -20px -20px 6px hsl(240 100% 50%);
+}
+
+.t5 {
+    text-shadow: 40px 20px 0px purple, 40px -20px 2px rgb(255 0 0), -40px 20px 4px #00ff00, -40px -20px 6px hsl(240 100% 50%);
+}

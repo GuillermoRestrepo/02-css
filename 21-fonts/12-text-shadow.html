@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="12-text-shadow.css">
+    <title>text-shadow</title>
+</head>
+<body>
+    <h1>PROPIEDAD - (<code>text-shadow</code>)</h1>
+    <p>Al igual que (<code>box-shadow</code>) sirve para generar una sombra pero del texto. Esta sombra, cuenta con 4 parametros encargados de modificar su posicion y su aspecto, los cuales son: </p>
+    <pre><code>
+        text-shadow: (offset-x) (offset-y) (blur-radius) (color);
+    </code></pre>
+    <table>
+        <thead>
+            <th>Parametro</th>
+            <th>¿Qué modifica?</th>
+        </thead>
+        <tr>
+            <td>offset-x</td>
+            <td>Controla la posición horizontal de la sombra.</td>
+        </tr>
+        <tr>
+            <td>offset-y</td>
+            <td>Controla la posición vertical de la sombra.</td>
+        </tr>
+        <tr>
+            <td>blur-radius</td>
+            <td>Controla la difuminación de la sombra.</td>
+        </tr>
+        <tr>
+            <td>color</td>
+            <td>Controla el color y la opacidad de la sombra.</td>
+        </tr>
+    </table>
+
+    <h2>Ejemplo Mínimo:</h2>
+    <pre><code>
+        text-shadow: (offset-x) (offset-y);
+    </code></pre>
+
+    <p><strong>Nota:</strong> para q un texto tenga mas de una sombra, hay q separar los parametros de cada sombra con una coma.</p>
+
+    <h2>Ejemplos:</h2>
+    <table>
+        <tr>
+            <td>
+                <pre><code>
+text-shadow: 20px 20px 0px purple;
+                </code></pre>
+            </td>
+            <td>
+                <pre><code>
+text-shadow: 20px -20px 2px rgb(255 0 0);
+                </code></pre>
+            </td>
+            <td>
+                <pre><code>
+text-shadow: -20px 20px 4px #00ff00;
+                </code></pre>
+            </td>
+        </tr>
+        <tr>
+            <td class="celda">
+                <p class="t1">¡Hola, mundo!</p>
+            </td>
+            <td class="celda">
+                <p class="t2">¡Hola, mundo!</p>
+            </td>
+            <td class="celda">
+                <p class="t3">¡Hola, mundo!</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <pre><code>
+text-shadow: -20px -20px 6px hsl(240 100% 50%);
+                </code></pre>
+            </td>
+            <td colspan="2">
+                <pre><code>
+text-shadow: 40px 20px 0px purple, 40px -20px 2px rgb(255 0 0), -40px 20px 4px #00ff00, -40px -20px 6px hsl(240 100% 50%);
+                </code></pre>
+            </td>
+        </tr>
+        <tr>
+            <td class="celda">
+                <p class="t4">¡Hola, mundo!</p>
+            </td>
+            <td colspan="2"class="celda">
+                <p class="t5">¡Hola, mundo!</p>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
