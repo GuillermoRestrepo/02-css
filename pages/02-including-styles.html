@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducir estilo</title>
+    <link rel="stylesheet" href="../css/01-comments.css">
+    <style>
+        .demo-span {
+            color: tomato;
+            font-size: 2rem;
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../index.html">Índice</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>INTRODUCIR ESTILO</h1>
+
+        <article>
+            <h2>Estilos En Línea</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Código</th>
+                        <th>Resultado</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>
+                            <p>Código HTML:</p>
+                            <pre><code></code></pre>
+                        </td>
+                        <td>
+                            <span style=" color: lightseagreen; font-size: 2rem;"">Hola</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+
+        <article>
+            <h2>Estilos Internos</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Código</th>
+                        <th>Resultado</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>
+                            <p>Código HTML:</p>
+                            <pre><code>&lt;head&gt;
+    &lt;style&gt;
+        span {
+            color: tomato;
+            font-size: 2rem;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;span&gt;Hola&lt;/span&gt;
+&lt;/body&gt;</code></pre>
+                        </td>
+
+                        <td rowspan="2">
+                            <span class="demo-span">Hola</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+
+    </main>
+
+    <footer>
+        <p>Última actualización: 16 de enero del 2026</p>
+    </footer>
+</body>
+</html>
