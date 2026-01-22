@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilos externos</title>
+    <link rel="stylesheet" href="../../css/02-css-into-html/03-external-styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../../index.html">Índice</a>
+        </nav>
+    </header>
+    
+    <main>
+        <h1>ESTILOS EXTERNOS</h1>
+        <p>Los estilos externos consisten en escribir el CSS en un archivo separado con extensión <code>.css</code> y luego enlazarlo al documento HTML.</p>
+
+        <section>
+            <h2>Ejemplo:</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Código</th>
+                        <th>Resultado</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>
+                            <p>Código HTML:</p>
+                            <pre><code>&lt;head&gt;
+    &lt;link rel="stylesheet" href="./03-external-styles.css"&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;span class="le1"&gt;Elemento de línea #1&lt;/span&gt;
+&lt;/body&gt;</code></pre>
+                        </td>
+
+                        <td rowspan="2">
+                            <span class="le1">Elemento de línea #1</span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <p>Código CSS:</p>
+                            <pre><code>.le1 {
+    color: light;
+}</code></pre>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    
+    <footer>
+        <p>Última actualización: 21 de enero del 2026.</p>
+    </footer>
+</body>
+</html>
